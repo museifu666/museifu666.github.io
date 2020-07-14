@@ -1,36 +1,15 @@
-# Setup
-title: Poole
-tagline: The Jekyll Butler
-url: https://getpoole.com
-paginate: 1
-baseurl: ""
-permalink: pretty
-remote_theme: b2a3e8/jekyll-theme-console
+# Example Site settings
 
-# Gems
+#google_analytics: UA-NNNNNNNN-N
+
+#header_pages:
+#  - index.md
+#  - about.md
+
+#footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
+
+#style: light # dark (default) or light
+#listen_for_clients_preferred_style: true # true or false (default)
+
 plugins:
-  - jekyll-gist
-  - jekyll-paginate
   - jekyll-seo-tag
-
-# Optimize Jekyll
-exclude:
-  - .editorconfig
-  - .git
-  - .jekyll-cache
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.md
-  - README.md
-
-sass:
-  sass_dir: _sass
-  style: :compressed
-
-# Options
-
-# Replace this value and uncomment to enable Google Analytics tracking
-# ga_analytics: UA-000000-0
-
-# Custom vars
-version: 3.0.0
