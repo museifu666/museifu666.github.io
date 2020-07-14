@@ -68,8 +68,13 @@ html {
 }
 
 body {
-  color: #515151;
-  background-color: #fff;
+  background-color: rgba(0,0,0,0.97);
+  color: rgba(255,255,255,0.7);
+  padding: 5px;
+  margin: auto;
+  width: 80%;
+  border: 1px dashed rgba(255,255,255,0.7);
+  font-family: "Open Sans";
   background-image: url("../background.gif");
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
