@@ -1,5 +1,5 @@
 ---
-title: ls write_ups/
+title: $ ls write_ups/
 layout: page
 permalink: /write-ups
 ---
