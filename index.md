@@ -15,18 +15,6 @@ layout: default
 
 [DC562](https://dc562.org/)
 
-<ul>
-{% for member in site.categories.team reversed %}
-<li id="{{ member.title }}">{{ member.title }}
-<ul>
-<li>{{ member.mail }}</li>
-<li><a href="https://github.com/{{ member.github }}">https://github.com/{{ member.github }}</a></li>
-<li><a href="{{ member.site }}">{{ member.site }}</a></li>
-</ul>
-</li>
-{% endfor %}
-</ul>
-
 # $ cat projects.txt
 {:id="projects"}
 
