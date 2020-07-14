@@ -7,10 +7,10 @@ url: "http://museifu.com"
 description: "S3cur1ty L0L"
 cover: "/assets/img/cover.svg"
 fanpage_id: ""
+remote_theme: b2a3e8/jekyll-theme-console
 
 # Site general settings
 lang: "en"
-lang_alternate: "pt_BR"
 ssl: false # It will redirect to https
 
 # Media
