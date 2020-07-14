@@ -5,7 +5,6 @@ date: 2020-07-14 12:00:00
 categories: posts
 comments: true
 en: true
-description: An example post to this theme
 keywords: "CTF, rgb, writeups, challenges"
 ---
 
