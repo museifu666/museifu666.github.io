@@ -19,7 +19,8 @@ keywords: "CTF, rgb, writeups, challenges"
 |[Tic Tac Toe](#tic-tac-toe) | Web | 333 | 50 |
 |[vaporwave1](#vaporwave1) | [ZTC] | 166 | 190 |
 
-## Name a more iconic band 
+## Name a more iconic band (#name-a-more-iconic-band)
+#### Category: Beginner | Solves: 89 | Points: 411
 
 {:refdef: style="text-align: left;"}
 ![Name a more iconic band challenge description](https://i.imgur.com/zwX6zYQ.png)
@@ -51,8 +52,6 @@ Lastly, we use the following command to generate our flag:
 ![name-a-more-iconic-band-md5sum](https://i.imgur.com/XGKds6x.png)
 
 Flag: `rgbCTF{cf271c074989f6073af976de00098fc4}`
-
-#### Category: Beginner | Solves: 89 | Points: 411
 
 ## I Love Rainbows
 
