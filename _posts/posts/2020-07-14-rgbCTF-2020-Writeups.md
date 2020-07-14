@@ -1,10 +1,11 @@
 ---
 layout: post
-title: rgbCTF 2020 Writeups
+title: rgbCTF 2020 Write-up
 date: 2020-07-14 12:00:00
 categories: posts
 comments: true
 en: true
+description: An example post to this theme
 keywords: "CTF, rgb, writeups, challenges"
 ---
 
@@ -22,7 +23,7 @@ keywords: "CTF, rgb, writeups, challenges"
 #### Category: Beginner | Solves: 89 | Points: 411
 
 {:refdef: style="text-align: left;"}
-![Name a more iconic band challenge description](https://i.imgur.com/zwX6zYQ.png)
+![Name a more iconic band challenge description](https://i.imgur.com/zwX6zYQ.png){: .img
 {: refdef}
 
 We download the "data.7z" file and extract the contents:
