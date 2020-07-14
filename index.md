@@ -8,12 +8,12 @@ layout: default
 # $ cat contact.txt
 {:id="contact"}
 
-[museifu](https://twitter.com/museifu_).
+[museifu](https://twitter.com/museifu_)
 
 # $ cat team.txt
 {:id="team"}
 
-[DC562](https://dc562.org/).
+[DC562](https://dc562.org/)
 
 <ul>
 {% for member in site.categories.team reversed %}
