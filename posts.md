@@ -1,6 +1,6 @@
 ---
 layout: page
-title: $ cat contact.txt
+title: $ cat posts.txt
 ---
 
 <ul>
