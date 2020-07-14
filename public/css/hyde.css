@@ -72,7 +72,8 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: #fff;
+  color: rgba(255,255,255,1);
+  font-weight: bold;
 }
 
 /* About section */
