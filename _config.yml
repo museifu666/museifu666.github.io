@@ -22,3 +22,4 @@ twitter: https://twitter.com/museifu_
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title/
+theme: b2a3e8/jekyll-theme-console
