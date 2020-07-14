@@ -36,12 +36,16 @@ This file contains a Windows memory coredump.
 We will need to [extract](https://www.andreafortuna.org/2017/06/23/how-to-extract-a-ram-dump-from-a-running-virtualbox-machine/) the raw data that we can analyze with Volatility.
 We use objdump with egrep to locate the size and offset of the first LOAD section.
 ![Name-a-more-iconic-band-objdump](https://i.imgur.com/Oe15Iz5.png)
+
 Using this info we can extract the RAM we will use and remove the rest of the bytes we don't need.
 ![Name-a-more-iconic-band-offset](https://i.imgur.com/t1lI2o6.png)
+
 Next, we use volatility to determine image information from our data.raw file.
 ![name-a-more-iconic-band-volatility-imageinfo](https://i.imgur.com/QmICVDb.png)
+
 Then we use hivelist to locate the SAM and SYSTEM Virtual memory locations
 ![name-a-more-iconic-band-volatility-hivelist](https://i.imgur.com/mBJQKBS.png)
+
 Finally, using these locations we dump the NTLM hashes stored in memory from this file.
 ![name-a-more-iconic-band-volatility-hashdump](https://i.imgur.com/wAEbuNk.png)
 
