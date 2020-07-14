@@ -1,7 +1,6 @@
 ---
 layout: page
+title: $ cat about.txt
 ---
-
-# $ cat about.txt
 
 Security and security appliances.
