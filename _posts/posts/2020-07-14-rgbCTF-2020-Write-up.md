@@ -52,7 +52,7 @@ Finally, using these locations we dump the NTLM hashes stored in memory from thi
 
 ![name-a-more-iconic-band-volatility-hashdump](https://i.imgur.com/wAEbuNk.png)
 
-Now all we have to do is crack these NTLM hashes, sort the passwords alphabetically, create an MD5 hash of the result and submit the flag.
+Now all we have to do is crack these NTLM hashes, sort the passwords alphabetically, create an MD5 hash of the result, and submit the flag.
 
 ![name-a-more-iconic-band-hashcrack](https://i.imgur.com/wVy4YPf.png)
 
@@ -60,7 +60,7 @@ Lastly, we use the following command to generate our flag:
 
 ![name-a-more-iconic-band-md5sum](https://i.imgur.com/XGKds6x.png)
 
-Flag: `rgbCTF{cf271c074989f6073af976de00098fc4}`
+Flag: {:refdef: style="font-color: red;"}`rgbCTF{cf271c074989f6073af976de00098fc4}`{:refdef}
 
 ## I Love Rainbows
 
