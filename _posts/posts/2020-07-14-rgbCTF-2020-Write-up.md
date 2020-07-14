@@ -22,8 +22,8 @@ keywords: "CTF, rgb, writeups, challenges"
 ## Name a more iconic band (#name-a-more-iconic-band)
 #### Category: Beginner | Solves: 89 | Points: 411
 
-{:refdef: style="text-align: left;"}
-![Name a more iconic band challenge description](https://i.imgur.com/zwX6zYQ.png){: .img
+{:refdef: style="text-align: center;"}
+![Name a more iconic band challenge description](https://i.imgur.com/zwX6zYQ.png)
 {: refdef}
 
 We download the "data.7z" file and extract the contents:
