@@ -1,27 +1,52 @@
 <head>
-  <meta charset="utf-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>{{ page.title }}</title>
-  {%- seo title=false -%}
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-  {% if page.robots %}
-    <meta name="robots" content="{{page.robots}}" />
-  {% endif %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172524932-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-  {%- if site.listen_for_clients_preferred_style -%}
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/main.css" | relative_url }}">
-  {%- else -%}
-    {%- if site.style == 'light' -%}
-      <link rel="stylesheet" type="text/css" href="{{ "/assets/main-light.css" | relative_url }}">
-    {%- elsif site.style == 'hacker' -%}
-      <link rel="stylesheet" type="text/css" href="{{ "/assets/main-hacker.css" | relative_url }}">
-    {%- else -%}
-      <link rel="stylesheet" type="text/css" href="{{ "/assets/main-dark.css" | relative_url }}">
-    {%- endif -%}
-  {%- endif -%}
+	  gtag('config', 'UA-172524932-1');
+	</script>
 
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+	<meta property='twitter:image' content="https://sshell.co/public/computer-dock.jpg"/>
+	<meta property='twitter:creator' content="sshell">
+	<meta name="twitter:card" content="summary"/>
+	
+	
+	<meta property='twitter:title' content='{% if page.title == "Home" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}'/>
+	
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.url }}/public/css/poole.css">
+  <link rel="stylesheet" href="{{ site.url }}/public/css/syntax.css">
+  <link rel="stylesheet" href="{{ site.url }}/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="{{ site.url }}/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 </head>

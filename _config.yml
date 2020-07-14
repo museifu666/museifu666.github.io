@@ -1,16 +1,43 @@
-# Example Site settings
+permalink: pretty
+title: museifu > blog
+tagline: 'security things and security stuff'
+url: https://museifu.com
+paginate: 1
+baseurl: "/"
 
-#google_analytics: UA-NNNNNNNN-N
 
-#header_pages:
-#  - index.md
-#  - about.md
-#  - posts.md
-
-#footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
-
-#style: light # dark (default) or light
-#listen_for_clients_preferred_style: true # true or false (default)
-
+# Gems
 plugins:
+  - jekyll-gist
+  - jekyll-paginate
   - jekyll-seo-tag
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+#ga_analytics:
+
+# Specify the author for blog posts
+author:
+  name: museifu
+  url: https://twitter.com/museifu_
+  #email: museifu_
+  
+paginate: 5
+
+# Custom vars
+version: 3.0.0
