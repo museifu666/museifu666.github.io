@@ -19,7 +19,7 @@ keywords: "CTF, rgb, writeups, challenges"
 |[Tic Tac Toe](#tic-tac-toe) | Web | 333 | 50 |
 |[vaporwave1](#vaporwave1) | [ZTC] | 166 | 190 |
 
-## Name a more iconic band (#name-a-more-iconic-band)
+## Name a more iconic band
 #### Category: Beginner | Solves: 89 | Points: 411
 
 {:refdef: style="text-align: center;"}
