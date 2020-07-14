@@ -1,43 +1,28 @@
-<<<<<<< HEAD
-# Setup
-title: Museifu Blog
-tagline: L0l S3cur1ty
-url: https://museifu.com
-paginate: 1
-baseurl: ""
-permalink: pretty
+# Site specific settings
+title: "Title to this website"
+name: "Website name"
+keywords: "Key, words, about, this, website"
+baseurl: "/darcli"
+url: "http://website.com"
+description: "Website description"
+cover: "/assets/img/cover.svg"
+fanpage_id: ""
 
-# Gems
-plugins:
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-seo-tag
+# Site general settings
+lang: "en"
+lang_alternate: "pt_BR"
+ssl: false # It will redirect to https
 
-# Optimize Jekyll
-exclude:
-  - .editorconfig
-  - .git
-  - .jekyll-cache
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.md
-  - README.md
+# Media
+# Just the shortname:
+# facebook: lampiaosec # Rigth
+# facebook: facebook.com/lampiaosec # Wrong
+disqus: test
+twitter: 
+facebook: 
+github: 
+google:
 
-sass:
-  sass_dir: _sass
-  style: :compressed
-
-# Options
-
-# Replace this value and uncomment to enable Google Analytics tracking
-# ga_analytics: UA-000000-0
-
-# Specify the author for blog posts
-author:
-  name: Mu Seifu
-  url: https://twitter.com/museifu_
-  email: museifu@xeons.club
-
-# Custom vars
-version: 3.0.0
-=======
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/

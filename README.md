@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# Darcli
 
-You can use the [editor on GitHub](https://github.com/museifu666/museifu666.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Demo
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+You can see this theme on [gjuniioor.github.io/darcli](https://gjuniioor.github.io/darcli)
 
-### Markdown
+## Screenshot
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![Screenshot of the them](assets/img/screenshot.png)
 
-```markdown
-Syntax highlighted code block
+## Why the name?
 
-# Header 1
-## Header 2
-### Header 3
+It's just a joke: `dark + cli`.
 
-- Bulleted
-- List
+## Features
 
-1. Numbered
-2. List
+* Categories
+* Disqus comments
+* SEO
+	* Description
+	* Keywords
+	* Open Cards to twitter, facebook, linkedin, google+ and others
+* Code post (but no highligth :] )
+* Atom **AND** RSS feeds
 
-**Bold** and _Italic_ and `Code` text
+## Warnings
 
-[Link](url) and ![Image](src)
-```
+This is a theme intended to use to [lampiaosec website](https://lampiaosec.github.io) and after was converted to a general theme to jekyll.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+So, any questions, can you contact me ([@gjuniioor](https://github.com/gjuniioor)) or open a [issue](https://github.com/gjuniioor/darcli/issuesi).
 
-### Jekyll Themes
+## License
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/museifu666/museifu666.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This theme is under [GPL3](assets/LICENSE).
