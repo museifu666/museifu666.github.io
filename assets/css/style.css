@@ -95,3 +95,7 @@ main header {
 	padding-bottom: 15px;
 	border: 0;
 }
+
+.flag .highlighter-rouge {
+	color: red;
+}
