@@ -1,25 +1,41 @@
-# Site specific settings
-title: "Museifu Blog"
-name: "Museifu Blog"
-keywords: "Key, words, about, this, website"
-baseurl: "/"
-url: "http://museifu.com"
-description: "S3cur1ty L0L"
-cover: "/assets/img/cover.svg"
-fanpage_id: ""
-remote_theme: b2a3e8/jekyll-theme-console
+# Setup
+title: Poole
+tagline: The Jekyll Butler
+url: https://getpoole.com
+paginate: 1
+baseurl: ""
+permalink: pretty
 
-# Site general settings
-lang: "en"
-ssl: false # It will redirect to https
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
 
-# Media
-# Just the shortname:
-# facebook: lampiaosec # Rigth
-# facebook: facebook.com/lampiaosec # Wrong
-twitter: https://twitter.com/museifu_
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
 
-# Build settings
-markdown: kramdown
-permalink: /:categories/:title/
-theme: b2a3e8/jekyll-theme-console
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+# Specify the author for blog posts
+author:
+  name: Mark Otto
+  url: https://twitter.com/mdo
+  email: markdotto@gmail.com
+
+# Custom vars
+version: 3.0.0
