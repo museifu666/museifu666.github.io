@@ -33,6 +33,7 @@
 
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  background-image: url("../img/background.gif");
 }
 @media (min-width: 48em) {
   html {
