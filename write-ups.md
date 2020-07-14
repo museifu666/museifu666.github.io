@@ -1,14 +1,9 @@
 ---
 layout: page
-title: $ cat write-ups.txt
+title: $ cat write_ups.txt
 ---
 
 <ul>
 {% for post in site.categories.posts %}
 
-{% if post.en %}
-<li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">rgbCTF 2020</a>
-{% endif %}
-
-{% endfor %}
-</ul>
+<li><a href="{{ post.url }}" title="{{ post.description }}">rgbCTF 2020</a>
