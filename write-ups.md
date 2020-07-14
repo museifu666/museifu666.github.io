@@ -1,6 +1,6 @@
 ---
 layout: page
-title: $ ls write_ups.txt
+title: $ ls write_ups/
 ---
 
 <ul>
