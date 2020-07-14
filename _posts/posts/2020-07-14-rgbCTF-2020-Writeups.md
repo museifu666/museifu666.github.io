@@ -21,7 +21,7 @@ keywords: "CTF, rgb, writeups, challenges"
 
 ## Name a more iconic band 
 
-{:refdef: style="text-align: center;"}
+{:refdef: style="text-align: left;"}
 ![Name a more iconic band challenge description](https://i.imgur.com/zwX6zYQ.png)
 {: refdef}
 
