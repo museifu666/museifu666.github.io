@@ -60,8 +60,9 @@ Lastly, we use the following command to generate our flag:
 
 ![name-a-more-iconic-band-md5sum](https://i.imgur.com/XGKds6x.png)
 
-Flag: `rgbCTF{cf271c074989f6073af976de00098fc4}` {: .flag}
-
+{:refdef: .flag}
+Flag: `rgbCTF{cf271c074989f6073af976de00098fc4}`
+{:refdef}
 
 ## I Love Rainbows
 
