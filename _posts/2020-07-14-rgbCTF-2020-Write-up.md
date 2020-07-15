@@ -118,10 +118,67 @@ Awesome, the plain-text value of these hashes were previously cracked, let's sub
 Flag: `rgbCTF{4lw4ys_us3_s4lt_wh3n_h4shing}`
 {:refdef}
 
+----------------
 
 ## Penguins
 
 #### Category: Misc | Solves: 135 | Points: 295
+
+----------------
+
+![penguins-challenge](https://i.imgur.com/sLCB3ij.png)
+
+
+
+We download and unzip the file.
+
+
+
+![penguin-unzip](https://i.imgur.com/SXyApI9.png)
+
+
+
+Ah, a git challenge. Let's explore the contents and see if we can find any useful information.
+
+
+
+![penguin-git](https://i.imgur.com/M4pX0jO.png)
+
+lol..
+
+After some digging around the .git folder I decided to take a look at the git log history.
+
+![penguins-git-history](https://i.imgur.com/7tbkxlT.png)
+
+
+
+Commit `57adeae7` looks interesting. Let's check out the "relevant file" change.
+
+
+
+![penguins-git-ls](https://i.imgur.com/eExUewD.png)
+
+
+
+After checking the new files we find the following:
+
+
+
+![penguins-base64](https://i.imgur.com/pjhEmmo.png)
+
+
+
+We base64 decode this string with `base64 -d < perhaps_relevant_v2` to receive the following output:
+
+`as yoda once told me "reward you i must"
+and then he gave me this ----
+rgbctf{d4ngl1ng_c0mm17s_4r3_uNf0r7un473}`
+
+{:refdef: .flag}
+
+Flag: `rgbctf{d4ngl1ng_c0mm17s_4r3_uNf0r7un473}`
+
+{:refdef}
 
 ----------------
 
