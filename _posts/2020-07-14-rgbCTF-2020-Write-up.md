@@ -188,8 +188,7 @@ I played a few games to determine the behavior of the script running this site. 
 ![tic-tac-toe-uwus](https://i.imgur.com/5SFcnS9.png)
 
 
-So, if we place `uwu` on the bottom middle square, the script's logic will prevent us from winning on the bottom row rather than winning on the top row itself. See image:
-
+If we place our `uwu` marker on the middle bottom row, the script will prioritize blocking our next move versus winning itself on the top row. See image:
 
 ![tic-tac-toe-winning-on-next-move](https://i.imgur.com/xiHeYUm.png)
 
