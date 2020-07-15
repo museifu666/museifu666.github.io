@@ -39,7 +39,7 @@
 	display: inline;
 }
 
-.sidebar-nav-item img {
+.navbar-item img {
 	margin: 0px;
 	vertical-align: middle;
 }
@@ -69,6 +69,7 @@ html {
 }
 
 body {
+  text-align: center;
   background-color: rgba(0,0,0,0.97);
   color: rgba(255,255,255,0.7);
   margin: auto;
@@ -82,6 +83,7 @@ body {
 a {
   color: #e5e5e5;
   text-decoration: none;
+  text-align: center;
 }
 a strong {
   color: inherit;
