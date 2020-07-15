@@ -186,6 +186,57 @@ Flag: `rgbctf{d4ngl1ng_c0mm17s_4r3_uNf0r7un473}`
 
 ----------------
 
+![tic-tac-toe](https://i.imgur.com/Hbclev4.png)
+
+
+
+We navigate to `http://challenge.rgbsec.xyz:8974` and are presented with the following:
+
+![tic-tac-toe-web](https://i.imgur.com/0Rikkjn.png)
+
+
+
+As the player we are given `uwu` as our mark, the script uses `owo`.
+
+I played a few games to determine the behavior of the script running this site. I soon realized that the script was making a logic error when presented with the following condition: In the case that the human player makes a move that sets up a winning condition the following round, the script will prevent the player from winning on the following round even if the script can win on that same exact round. See image below:
+
+
+
+![tic-tac-toe-uwus](https://i.imgur.com/5SFcnS9.png)
+
+
+
+So, if we place `uwu`on the middle bottom square, the script's logic will prevent us from winning the following move. See image:
+
+
+
+![tic-tac-toe-winning-on-next-move](https://i.imgur.com/xiHeYUm.png)
+
+
+
+Thus, we are winning on the next move, top middle square.
+
+
+
+![tic-tac-toe-base64](https://i.imgur.com/Fdjp25W.png)
+
+We base64 decode this string and retrieve the flag!
+
+
+
+![tic-tac-toe-flag](https://i.imgur.com/155646e.png)
+
+
+
+Note: I'm sure there was another way to solve this by modifying the javascript, but why work hard?
+
+
+{:refdef: .flag}
+Flag: `rgbCTF{h4h4_j4v42cr1p7_ev3n72_AR3_c00L}`
+{:refdef}
+
+----------------
+
 ## vaporwave1
 
 #### Category: [ZTC] | Solves: 166 | Points: 190
