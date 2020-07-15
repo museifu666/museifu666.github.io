@@ -32,18 +32,18 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font: Helvetica;
   padding-left: 50px;
   padding-right: 50px;
 }
 @media (min-width: 48em) {
   html {
-    font-size: 16px;
+    font-size: .8rem;
   }
 }
 @media (min-width: 58em) {
   html {
-    font-size: 15px;
+    font-size: .8rem;
   }
 }
 
