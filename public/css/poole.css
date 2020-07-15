@@ -39,6 +39,14 @@
 	display: inline;
 }
 
+.myTopnav {
+        text-align: center;
+}
+
+.navbar {
+        text-align: center;
+}
+
 .navbar-item img {
 	margin: 0px;
 	vertical-align: middle;
