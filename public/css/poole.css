@@ -40,13 +40,15 @@
 }
 
 #myTopnav {
-        text-align: center;
+  text-align: center;
 	font-size: 20pt;
+}
+.navbar {
+  text-align: center; 
 }
 
 .navbar-item a {
-        padding: 3px;
-         text-align: center;
+  padding: 3px;
 }
 
 .navbar-item img {
