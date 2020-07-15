@@ -71,6 +71,7 @@ html {
 body {
   background-color: rgba(0,0,0,0.97);
   color: rgba(255,255,255,0.7);
+  margin: auto;
   width: 60%;
   border: 1px dashed rgba(255,255,255,0.7);
   -webkit-text-size-adjust: 100%;
