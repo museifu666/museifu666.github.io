@@ -71,14 +71,14 @@ body {
 }
 
 html {
-  font-family: "Helvetica";
+  font: Helvetica;
   font-size: .8rem;
   line-height: 1.5;
   background-image: url("../background.gif");
 }
 @media (min-width: 38em) {
   html {
-    font-size: 15px;
+    font-size: .8rem;
   }
 }
 
