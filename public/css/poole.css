@@ -46,7 +46,9 @@
 .navbar {
   text-align: center; 
 }
-
+.navbar-item navbar {
+  padding: 5px;
+}
 .navbar-item a {
   padding: 5px;
 }
@@ -266,13 +268,13 @@ img {
   margin: 0 0 1rem;
   border-radius: 5px;
 }
-.tic-tac-toe-web img {
+.tic-tac-toe-web {
   margin: auto;
 }
-.tic-tac-toe-uwus img {
+.tic-tac-toe-uwus {
   margin: auto;
 }
-.tic-tac-toe-winning-on-next-move img {
+.tic-tac-toe-winning-on-next-move {
   margin: auto;
 }
 /* Tables */
