@@ -188,12 +188,12 @@ I played a few games to determine the behavior of the script running this site. 
 ![tic-tac-toe-uwus](https://i.imgur.com/5SFcnS9.png)
 
 
-So, if we place `uwu`on the middle bottom square, the script's logic will prevent us from winning the following move. See image:
+So, if we place `uwu` on the bottom middle square, the script's logic will prevent us from winning on the bottom row. See image:
 
 
 ![tic-tac-toe-winning-on-next-move](https://i.imgur.com/xiHeYUm.png)
 
-
+The trick here is to set ourselves up to win on the middle column.
 Thus, we are winning on the next move, top middle square.
 
 
