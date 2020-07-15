@@ -32,7 +32,7 @@
  */
 
 html {
-  font: Helvetica;
+  font-family: Helvetica;
   padding-left: 50px;
   padding-right: 50px;
 }
