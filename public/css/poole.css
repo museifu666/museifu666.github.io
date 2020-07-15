@@ -266,7 +266,15 @@ img {
   margin: 0 0 1rem;
   border-radius: 5px;
 }
-
+.tic-tac-toe-web img {
+  margin: auto;
+}
+.tic-tac-toe-uwus img {
+  margin: auto;
+}
+.tic-tac-toe-winning-on-next-move img {
+  margin: auto;
+}
 /* Tables */
 table {
   margin-bottom: 1rem;
