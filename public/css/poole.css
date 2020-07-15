@@ -96,6 +96,8 @@ a {
   color: #e5e5e5;
   text-decoration: none;
   text-align: center;
+  font-weight: bold;
+
 }
 a strong {
   color: inherit;
