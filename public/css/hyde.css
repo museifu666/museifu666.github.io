@@ -53,7 +53,7 @@ html {
  * out above content in mobile and later moves to the side with wider viewports.
  */
 
-.sidebar {
+.myTopnav {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
