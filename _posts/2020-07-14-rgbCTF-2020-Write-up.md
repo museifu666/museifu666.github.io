@@ -224,13 +224,13 @@ Flag: `rgbCTF{h4h4_j4v42cr1p7_ev3n72_AR3_c00L}`
 
 
 
-We download the vaporwave1.mp3 file and open it using Audacity. My first thoughts on this challenge were that this file is likely encoded as is common with steganography challenges.
+We download the vaporwave1.mp3 file and open it using Audacity. My first thoughts on this challenge were that this file is likely encoded, as is common with steganography challenges.
 
 ZTC brought some great tunes this year, I especially had fun working on the third installment of this challenge in "vaporwave3". Shoutout to ZTC for the summoning salt/speedrunning homage. 
 
 Now back to the challenge. 
 
-In Audacity we choose "spectrogram" and modify the spectrogram settings to include ranges up to 22000Hz frequency. We receive a message between 15kHZ and 22kHz and we have our flag.
+In Audacity we choose "spectrogram" and modify the spectrogram settings to include ranges up to 22000Hz frequency. By viewing the spectogram at this range we see a message between 15kHZ and 22kHz. We have found our flag.
 
 
 ![vaporwave1-challenge](https://i.imgur.com/N6ZNC7f.png)
