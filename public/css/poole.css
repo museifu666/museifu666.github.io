@@ -71,8 +71,8 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-family: "Helvetica";
+  font-size: .8rem;
   line-height: 1.5;
   background-image: url("../background.gif");
 }
