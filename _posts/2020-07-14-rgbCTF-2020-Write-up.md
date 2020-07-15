@@ -175,9 +175,7 @@ and then he gave me this ----
 rgbctf{d4ngl1ng_c0mm17s_4r3_uNf0r7un473}`
 
 {:refdef: .flag}
-
 Flag: `rgbctf{d4ngl1ng_c0mm17s_4r3_uNf0r7un473}`
-
 {:refdef}
 
 ----------------
