@@ -76,6 +76,48 @@ Flag: `rgbCTF{cf271c074989f6073af976de00098fc4}`
 
 ----------------
 
+![i-love-rainbows](https://i.imgur.com/Qu538xe.png)
+
+
+
+We download the rainbows.txt file and list the contents.
+
+
+
+![i-love-rainbows-contents](https://i.imgur.com/9kdQ6NS.png)
+
+
+
+From the name of the challenge we are given a hint that we may be looking at a rainbow table attack using this list of hashes.
+
+We run hash-identifier on the first two hashes to determine their hash type.
+
+
+
+![i-love-rainbows-hash](https://i.imgur.com/a3uZlJz.png)
+
+![i-love-rainbows-sha256](https://i.imgur.com/7793gNB.png)
+
+
+
+Okay, so the first hash `4b43b0aee35624cd95b910189b3dc231` is an MD5 hash and the second `cd0aa9856147b6c5b4ff2b7dfee5da20aa38253099ef1b4a64aced233c9afe29` is SHA-256. We will assume the shorter hashes are MD5 and the longer hashes are SHA-256. Assuming these hashes are not [salted](https://doubleoctopus.com/security-wiki/encryption-and-cryptography/salted-secure-hash-algorithm/), we could attempt to crack these locally. I even considered generating my own rainbow tables (yikes) for the sake of the challenge, but instead let's see if we can use an online password cracker that already has rainbow table lists generated and likely has the plain-text results.
+
+We'll use [Crackstation](https://crackstation.net). A limit of 20 hashes can be submitted at once, we'll submit the first 20 hashes and then the last 4 separately.
+
+
+
+![i-love-rainbows-crackstation](https://i.imgur.com/l7Q8bR7.png)
+
+![i-love-rainbows-crackstation2](https://i.imgur.com/R14wx8D.png)
+
+
+
+Awesome, the plain-text value of these hashes were previously cracked, let's submit our flag!
+
+Flag: `rgbCTF{4lw4ys_us3_s4lt_wh3n_h4shing}`
+
+
+
 ## Penguins
 
 #### Category: Misc | Solves: 135 | Points: 295
