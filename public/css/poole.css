@@ -204,8 +204,7 @@ pre code {
   color: inherit;
   background-color: transparent;
 }
-
-code .flag {
+.flag code{
   color: red;
 }
 
