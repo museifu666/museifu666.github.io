@@ -30,8 +30,8 @@ keywords: "CTF, rgb, writeups, challenges"
 
 We download the "data.7z" file and extract the contents:
 
-`$ file data_1
-data_1: ELF 64-bit LSB core file, x86-64, version 1 (SYSV)`
+`$ file data_1`
+`data_1: ELF 64-bit LSB core file, x86-64, version 1 (SYSV)`
 
 Running strings on this "ELF" file we become immediately aware that this is not in fact an ELF file.
 This file contains a Windows memory coredump.
