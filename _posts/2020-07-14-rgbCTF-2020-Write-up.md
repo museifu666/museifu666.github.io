@@ -19,8 +19,12 @@ keywords: "CTF, rgb, writeups, challenges"
 |[Tic Tac Toe](#tic-tac-toe) | Web | 333 | 50 |
 |[vaporwave1](#vaporwave1) | [ZTC] | 166 | 190 |
 
+----------------
+
 ## Name a more iconic band
 #### Category: Beginner | Solves: 89 | Points: 411
+
+----------------
 
 ![Name a more iconic band challenge description](https://i.imgur.com/zwX6zYQ.png)
 
@@ -64,19 +68,28 @@ Lastly, we use the following command to generate our flag:
 Flag: `rgbCTF{cf271c074989f6073af976de00098fc4}`
 {:refdef}
 
+----------------
+
 ## I Love Rainbows
 
 #### Category: Cryptography | Solves: 408 | Points: 50
+
+----------------
 
 ## Penguins
 
 #### Category: Misc | Solves: 135 | Points: 295
 
+----------------
+
 ## Tic Tac Toe
 
 #### Category: Web | Solves: 333 | Points: 50
+
+----------------
 
 ## vaporwave1
 
 #### Category: [ZTC] | Solves: 166 | Points: 190
 
+----------------
