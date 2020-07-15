@@ -114,8 +114,9 @@ We'll use [Crackstation](https://crackstation.net). A limit of 20 hashes can be 
 
 Awesome, the plain-text value of these hashes were previously cracked, let's submit our flag!
 
+{:refdef: .flag}
 Flag: `rgbCTF{4lw4ys_us3_s4lt_wh3n_h4shing}`
-
+{:refdef}
 
 
 ## Penguins
