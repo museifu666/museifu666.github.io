@@ -79,13 +79,10 @@ Flag: `rgbCTF{cf271c074989f6073af976de00098fc4}`
 ![i-love-rainbows](https://i.imgur.com/Qu538xe.png)
 
 
-
 We download the rainbows.txt file and list the contents.
 
 
-
 ![i-love-rainbows-contents](https://i.imgur.com/9kdQ6NS.png)
-
 
 
 From the name of the challenge we are given a hint that we may be looking at a rainbow table attack using this list of hashes.
@@ -93,11 +90,9 @@ From the name of the challenge we are given a hint that we may be looking at a r
 We run hash-identifier on the first two hashes to determine their hash type.
 
 
-
 ![i-love-rainbows-hash](https://i.imgur.com/a3uZlJz.png)
 
 ![i-love-rainbows-sha256](https://i.imgur.com/7793gNB.png)
-
 
 
 Okay, so the first hash `4b43b0aee35624cd95b910189b3dc231` is an MD5 hash and the second `cd0aa9856147b6c5b4ff2b7dfee5da20aa38253099ef1b4a64aced233c9afe29` is SHA-256. We will assume the shorter hashes are MD5 and the longer hashes are SHA-256. Assuming these hashes are not [salted](https://doubleoctopus.com/security-wiki/encryption-and-cryptography/salted-secure-hash-algorithm/), we could attempt to crack these locally. I even considered generating my own rainbow tables (yikes) for the sake of the challenge, but instead let's see if we can use an online password cracker that already has rainbow table lists generated and likely has the plain-text results.
@@ -105,11 +100,9 @@ Okay, so the first hash `4b43b0aee35624cd95b910189b3dc231` is an MD5 hash and th
 We'll use [Crackstation](https://crackstation.net). A limit of 20 hashes can be submitted at once, we'll submit the first 20 hashes and then the last 4 separately.
 
 
-
 ![i-love-rainbows-crackstation](https://i.imgur.com/l7Q8bR7.png)
 
 ![i-love-rainbows-crackstation2](https://i.imgur.com/R14wx8D.png)
-
 
 
 Awesome, the plain-text value of these hashes were previously cracked, let's submit our flag!
@@ -129,43 +122,36 @@ Flag: `rgbCTF{4lw4ys_us3_s4lt_wh3n_h4shing}`
 ![penguins-challenge](https://i.imgur.com/sLCB3ij.png)
 
 
-
 We download and unzip the file.
-
 
 
 ![penguin-unzip](https://i.imgur.com/SXyApI9.png)
 
 
-
 Ah, a git challenge. Let's explore the contents and see if we can find any useful information.
 
 
-
 ![penguin-git](https://i.imgur.com/M4pX0jO.png)
+
 
 lol..
 
 After some digging around the .git folder I decided to take a look at the git log history.
 
-![penguins-git-history](https://i.imgur.com/7tbkxlT.png)
 
+![penguins-git-history](https://i.imgur.com/7tbkxlT.png)
 
 
 Commit `57adeae7` looks interesting. Let's check out the "relevant file" change.
 
 
-
 ![penguins-git-ls](https://i.imgur.com/eExUewD.png)
-
 
 
 After checking the new files we find the following:
 
 
-
 ![penguins-base64](https://i.imgur.com/pjhEmmo.png)
-
 
 
 We base64 decode this string with `base64 -d < perhaps_relevant_v2` to receive the following output:
@@ -189,11 +175,9 @@ Flag: `rgbctf{d4ngl1ng_c0mm17s_4r3_uNf0r7un473}`
 ![tic-tac-toe](https://i.imgur.com/Hbclev4.png)
 
 
-
 We navigate to `http://challenge.rgbsec.xyz:8974` and are presented with the following:
 
 ![tic-tac-toe-web](https://i.imgur.com/0Rikkjn.png)
-
 
 
 As the player we are given `uwu` as our mark, the script uses `owo`.
@@ -201,21 +185,16 @@ As the player we are given `uwu` as our mark, the script uses `owo`.
 I played a few games to determine the behavior of the script running this site. I soon realized that the script was making a logic error when presented with the following condition: In the case that the human player makes a move that sets up a winning condition the following round, the script will prevent the player from winning on the following round even if the script can win on that same exact round. See image below:
 
 
-
 ![tic-tac-toe-uwus](https://i.imgur.com/5SFcnS9.png)
-
 
 
 So, if we place `uwu`on the middle bottom square, the script's logic will prevent us from winning the following move. See image:
 
 
-
 ![tic-tac-toe-winning-on-next-move](https://i.imgur.com/xiHeYUm.png)
 
 
-
 Thus, we are winning on the next move, top middle square.
-
 
 
 ![tic-tac-toe-base64](https://i.imgur.com/Fdjp25W.png)
@@ -223,9 +202,7 @@ Thus, we are winning on the next move, top middle square.
 We base64 decode this string and retrieve the flag!
 
 
-
 ![tic-tac-toe-flag](https://i.imgur.com/155646e.png)
-
 
 
 Note: I'm sure there was another way to solve this by modifying the javascript, but why work hard?
@@ -242,3 +219,23 @@ Flag: `rgbCTF{h4h4_j4v42cr1p7_ev3n72_AR3_c00L}`
 #### Category: [ZTC] | Solves: 166 | Points: 190
 
 ----------------
+
+![vaporwave1-challenge](https://i.imgur.com/oDSGM7W.png)
+
+
+
+We download the vaporwave1.mp3 file and open it using Audacity. My first thoughts on this challenge were that this file is likely encoded as is common with steganography challenges.
+
+ZTC brought some great tunes this year, I especially had fun working on the third installment of this challenge in "vaporwave3". Shoutout to ZTC for the summoning salt/speedrunning homage. 
+
+Now back to the challenge. 
+
+In Audacity we choose "spectrogram" and modify the spectrogram settings to include ranges up to 22000Hz frequency. We receive a message between 15kHZ and 22kHz and we have our flag.
+
+
+![vaporwave1-challenge](https://i.imgur.com/N6ZNC7f.png)
+
+
+{:refdef: .flag}
+Flag: `rgbCTF{s331ng_s0undz}`
+{:refdef}
