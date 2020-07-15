@@ -72,6 +72,7 @@ body {
   color: rgba(255,255,255,0.7);
   border: 1px rgba(255,255,255,0.7);
   background-image: url("../background.gif");
+  border: 1px dashed rgba(255,255,255,0.7);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
