@@ -37,6 +37,7 @@ Running strings on this "ELF" file we become immediately aware that this is not 
 This file contains a Windows memory coredump.
 We will need to [extract](https://www.andreafortuna.org/2017/06/23/how-to-extract-a-ram-dump-from-a-running-virtualbox-machine/) the raw data and then analyze it with [Volatility](https://github.com/volatilityfoundation/volatility/wiki/Installation).
 We use objdump with egrep to locate the size and offset of the first LOAD section.
+
 ![Name-a-more-iconic-band-objdump](https://i.imgur.com/Oe15Iz5.png)
 
 This section contains the RAM information we care about. We remove the bytes we don't need.
