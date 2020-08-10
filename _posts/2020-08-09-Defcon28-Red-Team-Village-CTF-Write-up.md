@@ -17,6 +17,7 @@ I want to start this post out by saying a big thank you to all the organizers an
 
 
 
+
 ## Introduction {#intro}
 
 | Challenge Name | Category | Solves | Points |
