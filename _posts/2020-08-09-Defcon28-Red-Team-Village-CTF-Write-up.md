@@ -56,9 +56,6 @@ I want to start this post out by saying a big thank you to all the organizers an
 |[Tom Nook - 1E](#tom-nook-1e) | Forensics | 194 | 30 |
 |[Tom Nook - 1F](#tom-nook-1f) | Forensics | 192 | 20 |
 
-
-
-
 ----------------
 
 ## Bastion {#bastion}
@@ -124,6 +121,8 @@ We are given the following output:
 {:refdef: .flag}
 Flag: `ts{TheFirstTunnelIsTheEasiest}`
 {:refdef}
+
+----------------
 
 [--- Back to Top ---](#intro)
 
