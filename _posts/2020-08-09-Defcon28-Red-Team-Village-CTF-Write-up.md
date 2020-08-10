@@ -33,7 +33,7 @@ I want to start this post out by saying a big thank you to all the organizers an
 |[All about that base remix](#all-about-that-base-remix) | Crypto, Ciphers, and Encodings | 360 | 10 |
 |[n Eggs](#n-eggs) | Crypto, Ciphers, and Encodings | 423 | 10 |
 |[et tu brute](#et-tu-brute) | Crypto, Ciphers, and Encodings | 376 | 10 |
-|[AFSC 29331](#AFSC-29331) | Crypto, Ciphers, and Encodings | 313 | 10 |
+|[AFSC 29331](#afsc-29331) | Crypto, Ciphers, and Encodings | 313 | 10 |
 |[Don't touch the third rail](#dont-touch-the-third-rail) | Crypto, Ciphers, and Encodings | 188 | 10 |
 |[Why are they even in that order in the fist place?](#why-are-they-even-in-that-order-in-the-fist-place) | Crypto, Ciphers, and Encodings | 222 | 10 |
 |[1 - Pop a shell on that](#1-pop-a-shell-on-that) | Workout at Home Gym | 145 | 200 |
@@ -202,7 +202,7 @@ Flag: `ts{TunnelsInTunnelsInTunnels}`
 
 ----------------
 
-## 1 - What failed
+## 1 What failed
 
 #### Category: Logs | Solves: 437 | Points: 25 
 
@@ -225,7 +225,7 @@ Flag: `ssh`
 
 ----------------
 
-## 2 - Who failed
+## 2 Who failed
 
 #### Category: Logs | Solves: 389 | Points: 25
 
@@ -255,7 +255,7 @@ Flag: `8`
 
 ----------------
 
-## 3 - We failed
+## 3 We failed
 
 #### Category: Logs | Solves: 401 | Points: 25
 
@@ -280,7 +280,7 @@ Flag: `48`
 
 ----------------
 
-## 4 - Whom failed
+## 4 Whom failed
 
 #### Category: Logs | Solves: 402 | Points: 25
 
@@ -470,7 +470,7 @@ Flag: `TSLONGESTCOMBOEVERRECORDED`
 
 ----------------
 
-## 1 - Pop on a shell on that
+## 1 - Pop a shell on that
 
 #### Category: Workout at Home Gym | Solves: 145 | Points: 200
 
@@ -622,7 +622,7 @@ Flag: `James`
 
 ----------------
 
-## 5-Let's have some SQL fun 2
+## 5 - Let's have some SQL fun 2
 
 #### Category: Workout at Home Gym | Solves: 100 | Points: 75
 
