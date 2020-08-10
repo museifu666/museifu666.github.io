@@ -399,7 +399,7 @@ Flag: `TSANOLDIEBUTAGOODIE`
 
 ----------------
 
-## AFSC 29331 {#asfc-29331}
+## AFSC 29331 {#afsc-29331}
 
 #### Category: Crypto, Ciphers, and Encodings | Solves: 313 | Points: 10
 
@@ -515,7 +515,7 @@ Flag: `ts{ThatWasAnEasyShelltoPop}`
 
 ----------------
 
-## Let's Enumerate this host a bit 1 {#lets-enumerate-this-host-a-bit-1}
+## Let's Enumerate this host a bit 1 {#lets-enumerate-the-host-a-bit-1}
 
 #### Category: Workout at Home Gym | Solves: 131 | Points: 25
 
@@ -552,7 +552,7 @@ Flag: `10.213.12.10`
 
 ----------------
 
-## Let's Enumerate this host a bit 2 {#lets-enumerate-this-host-a-bit-2}
+## Let's Enumerate this host a bit 2 {#lets-enumerate-the-host-a-bit-1}
 
 #### Category: Workout at Home Gym | Solves: 125 | Points: 50
 
