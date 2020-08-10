@@ -125,7 +125,7 @@ We are given the following output:
 Flag: `ts{TheFirstTunnelIsTheEasiest}`
 {:refdef}
 
-{:refdef: style="text-align: center;"} [--- Back to Top ---](#intro) {: refdef}
+[--- Back to Top ---](#intro)
 
 ----------------
 
