@@ -508,7 +508,7 @@ Now to find the flag on the root of the filesystem:
 
 ![flag](https://i.imgur.com/KfS3qgv.png)
 
-That was an easy shell to pop. No kidding.
+That *was* an easy shell to pop. No kidding.
 
 {:refdef: .flag}
 Flag: `ts{ThatWasAnEasyShelltoPop}`
