@@ -85,7 +85,9 @@ Address: 10.218.176.199, user: whistler, password: cocktailparty
 
 Simple enough.
 
-{:refdef: style="text-align: center;"} [--- Back to Top ---](#intro) {: refdef}
+----------------
+
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -147,7 +149,9 @@ We successfully connect to this new host and receive the next flag!
 Flag: `ts{IThoughtWeLostYouOnTheWay}`
 {:refdef}
 
-{:refdef: style="text-align: center;"} [--- Back to Top ---](#intro) {: refdef}
+----------------
+
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -194,6 +198,9 @@ Flag: `ts{TunnelsInTunnelsInTunnels}`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## 1 - What failed
 
@@ -212,6 +219,9 @@ A quick check review of the log shows fail2ban is configured to ban users over s
 {:refdef: .flag}
 Flag: `ssh`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -241,6 +251,9 @@ Flag: `8`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## 3 - We failed
 
@@ -261,6 +274,9 @@ A simple CTRL+F find all search on this log file on "CRITICAL Unable to restore 
 {:refdef: .flag}
 Flag: `48`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -285,6 +301,9 @@ Flag: `116.31.116.47`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## All about that base
 
@@ -303,6 +322,9 @@ This is a simple base64 encoded string.
 {:refdef: .flag}
 Flag: `ts{IsThisEncryption}`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -329,6 +351,9 @@ Flag: `ts{ThisIstotallyEncryption!}`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## n Eggs
 
@@ -345,6 +370,9 @@ Output: "TSBACONISMYNAME"
 {:refdef: .flag}
 Flag: `TSBACONISMYNAME`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -367,6 +395,9 @@ Flag: `TSANOLDIEBUTAGOODIE`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## AFSC 29331
 
@@ -387,6 +418,9 @@ Flag: `DUTY BOPPERS`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## Don't touch the third rail
 
@@ -405,6 +439,9 @@ Specifically with a height of 3.
 {:refdef: .flag}
 Flag: `ts{ZigyzagyCipherFTW}`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -429,12 +466,9 @@ Flag: `TSLONGESTCOMBOEVERRECORDED`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
 
-## Tom Nook - 1A - Internet Traffic
-
-#### Category: Forensics | Solves: 259 | Points: 30
-
-
+----------------
 
 ## 1 - Pop on a shell on that
 
@@ -477,6 +511,9 @@ Flag: `ts{ThatWasAnEasyShelltoPop}`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ##  2 - Let's Enumerate this host a bit 1
 
@@ -510,6 +547,9 @@ So, we know the IP address is `10.213.12.10`
 Flag: `10.213.12.10`
 {:refdef}
 
+\----------------
+[--- Back to Top ---](#intro)
+
 ----------------
 
 ## 3 - Let's Enumerate this host a bit 2
@@ -531,6 +571,9 @@ Let's try some default passwords: root:root doesn't work. root:toor works!
 {:refdef: .flag}
 Flag: `toor`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -575,6 +618,9 @@ Flag: `James`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## 5-Let's have some SQL fun 2
 
@@ -599,6 +645,9 @@ This gives us 5016 rows or members for output.
 {:refdef: .flag}
 Flag: `5016`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -641,6 +690,9 @@ Austin is the most popular gym location.
 {:refdef: .flag}
 Flag: `Austin`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -697,6 +749,9 @@ Flag: `2014`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## 1 Lookin' for dem Tiger Tunes
 
@@ -731,6 +786,9 @@ Sure enough, by searching for ../../etc/flag.txt we are returned with the output
 {:refdef: .flag}
 Flag: `TS{SheDidItDotDotDotty}`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -791,6 +849,9 @@ Flag: `TS{NeverGonnaLetYouFindMyExHusbandsBody}`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## Look Closer
 
@@ -813,6 +874,9 @@ Easy enough.
 {:refdef: .flag}
 Flag: `TS{SupaHotFireeeeee}`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -839,6 +903,9 @@ Easy enough.
 {:refdef: .flag}
 Flag: `flag{s0nicw@v!}`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -893,6 +960,9 @@ Flag: `flag{f93kfaskdif92}`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## Strings
 
@@ -921,6 +991,9 @@ Flag: `ts{DidYouUseStringsorMaths}`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## Tom Nook - 1A - Internet Traffic
 
@@ -941,6 +1014,9 @@ Flag: `TS{TomNookUsesTheInternet}`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## Tom Nook - 1B - Internet Traffic
 
@@ -955,6 +1031,9 @@ Source: 192.168.1.47
 {:refdef: .flag}
 Flag: `192.168.1.47`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -973,6 +1052,9 @@ Flag: `161.35.110.243`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## Tom Nook - 1D - Internet Traffic
 
@@ -987,6 +1069,9 @@ Further analysis of the packet captures and we find the following filename:
 {:refdef: .flag}
 Flag: `SecretACBankStatement.zip`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
 
 ----------------
 
@@ -1013,6 +1098,9 @@ Flag: `monkey123`
 {:refdef}
 
 ----------------
+[--- Back to Top ---](#intro)
+
+----------------
 
 ## Tom Nook - 1F - Internet Traffic
 
@@ -1031,3 +1119,6 @@ Opening this "BankStatement.pdf" file we find the last flag.
 {:refdef: .flag}
 Flag: `TS{TomNookDrivesTheBoat}`
 {:refdef}
+
+----------------
+[--- Back to Top ---](#intro)
