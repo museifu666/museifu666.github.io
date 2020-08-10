@@ -9,6 +9,12 @@ description:
 keywords: "CTF, Defcon, Defcon28, writeups, write-ups, challenges, Red Team"
 ---
 
+## Thoughts
+
+I want to start this post out by saying a big thank you to all the organizers and volunteers of Defcon 28. We are all facing a difficult time at the moment in one way or another. Everyone really stepped up to make this event as great as it could be through the constraints of being exclusively virtual. Though I missed not being physically on-site to drink myself into a stupor amongst peers and friends, in exchange I found this year to be particularly productive. I participated in the Red Team village's CTF as well as the IOT village's CTF. I also took Georgia Weidman's "Hands-On Exploit Development" training. Georgia has a solid understanding of the material and communicates not just the concepts but the details well. Although this course was mostly review, I walked away with a more solid foundation on GNU's Debugger, troubleshooting code, and exploitation.  Big shoutout to the crew [@dc562](https://twitter.com/defcon562) you guys brought it this year and I couldn't be more proud. Please enjoy the write-ups from the challenges I completed in the Red Team village's CTF and feel free to contact me should you have any questions.
+
+
+
 ## Introduction
 
 | Challenge Name | Category | Solves | Points |
