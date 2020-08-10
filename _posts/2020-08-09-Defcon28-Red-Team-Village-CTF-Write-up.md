@@ -21,40 +21,40 @@ I want to start this post out by saying a big thank you to all the organizers an
 
 | Challenge Name | Category | Solves | Points |
 |:--------------:|:--------:|:------:|:------:|
-|[Bastion](#1-bastion) | Tunneler | 360 | 25 |
-|[Browsing Websites](#2-browsing-websites) | Tunneler | 276 | 50 |
-|[SSH in tunnels](#3-ssh-in-tunnels) | Tunneler | 267 | 50 |
-|[Another Pivot](#7-another-pivot) | Tunneler | 169 | 75 |
-|[What failed](#1-what-failed) | Logs | 437 | 25 |
-|[Who failed](#2-who-failed) | Logs | 388 | 25 |
-|[We failed](#3-we-failed) | Logs | 401 | 25 |
-|[Whom failed](#4-whom-failed) | Logs | 401 | 25 |
-|[All about that base](#all-about-that-base) | Crypto, Ciphers, and Encodings | 504 | 10 |
-|[All about that base remix](#all-about-that-base-remix) | Crypto, Ciphers, and Encodings | 360 | 10 |
+|[Bastion](#Bastion) | Tunneler | 360 | 25 |
+|[Browsing Websites](#Browsing Websites) | Tunneler | 276 | 50 |
+|[SSH in tunnels](#SSH in tunnels) | Tunneler | 267 | 50 |
+|[Another Pivot](#Another pivot) | Tunneler | 169 | 75 |
+|[What failed](#What failed) | Logs | 437 | 25 |
+|[Who failed](#Who failed) | Logs | 388 | 25 |
+|[We failed](#We failed) | Logs | 401 | 25 |
+|[Whom failed](#Whom failed) | Logs | 401 | 25 |
+|[All about that base](#All about that base) | Crypto, Ciphers, and Encodings | 504 | 10 |
+|[All about that base remix](#All about that base remix) | Crypto, Ciphers, and Encodings | 360 | 10 |
 |[n Eggs](#n-eggs) | Crypto, Ciphers, and Encodings | 423 | 10 |
 |[et tu brute](#et-tu-brute) | Crypto, Ciphers, and Encodings | 376 | 10 |
-|[AFSC 29331](#afsc-29331) | Crypto, Ciphers, and Encodings | 313 | 10 |
-|[Don't touch the third rail](#dont-touch-the-third-rail) | Crypto, Ciphers, and Encodings | 188 | 10 |
+|[AFSC 29331](#afsc 29331) | Crypto, Ciphers, and Encodings | 313 | 10 |
+|[Don't touch the third rail](#Don't-touch-the-third-rail) | Crypto, Ciphers, and Encodings | 188 | 10 |
 |[Why are they even in that order in the fist place?](#why-are-they-even-in-that-order-in-the-fist-place) | Crypto, Ciphers, and Encodings | 222 | 10 |
-|[Pop a shell on that](#1-pop-a-shell-on-that) | Workout at Home Gym | 145 | 200 |
-|[Let's enumerate the host a bit 1](#lets-enumerate-the-host-a-bit-1) | Workout at Home Gym | 131 | 25 |
-|[Let's enumerate the host a bit 2](#lets-enumerate-the-host-a-bit-2) | Workout at Home Gym | 125 | 50 |
-|[Let's have some SQL fun 1](#lets-have-some-sql-fun-1) | Workout at Home Gym | 112 | 300 |
-|[Let's have some SQL fun 2](#lets-have-some-sql-fun-2) | Workout at Home Gym | 100 | 75 |
-|[Let's have some SQL fun 3](#lets-have-some-sql-fun-3) | Workout at Home Gym | 95 | 75 |
-|[Let's have some SQL fun 4](#lets-have-some-sql-fun-4) | Workout at Home Gym | 108 | 75 |
-|[Lookin' for dem Tiger Tunes](#lookin-for-dem-tiger-tunes) | Tiger Tunes | 127 | 50 |
+|[Pop a shell on that](#Pop-a-shell-on-that) | Workout at Home Gym | 145 | 200 |
+|[Let's enumerate the host a bit 1](#let's-enumerate-the-host-a-bit-1) | Workout at Home Gym | 131 | 25 |
+|[Let's enumerate the host a bit 2](#let's-enumerate-the-host-a-bit-2) | Workout at Home Gym | 125 | 50 |
+|[Let's have some SQL fun 1](#let's-have-some-sql-fun-1) | Workout at Home Gym | 112 | 300 |
+|[Let's have some SQL fun 2](#let's-have-some-sql-fun-2) | Workout at Home Gym | 100 | 75 |
+|[Let's have some SQL fun 3](#let's-have-some-sql-fun-3) | Workout at Home Gym | 95 | 75 |
+|[Let's have some SQL fun 4](#let's-have-some-sql-fun-4) | Workout at Home Gym | 108 | 75 |
+|[Lookin' for dem Tiger Tunes](#lookin'-for-dem-tiger-tunes) | Tiger Tunes | 127 | 50 |
 |[Tigers Never Let You Down](#tigers-never-let-you-down) | Tiger Tunes | 52 | 150 |
 |[Look Closer](#look-closer) | Tiger Tunes | 66 | 150 |
 |[Can you hear me now?](#can-you-hear-me-now) | Forensics | 127 | 10 |
 |[Just a nice picture](#just-a-nice-picture) | Forensics | 127 | 25 |
 |[Strings](#strings) | Pwn | 155 | 75 |
-|[Tom Nook - 1A](#tom-nook-1a-internet-traffic) | Forensics | 259 | 30 |
-|[Tom Nook - 1B](#tom-nook-1b-internet-traffic) | Forensics | 318 | 10 |
-|[Tom Nook - 1C](#tom-nook-1c-internet-traffic) | Forensics | 318 | 10 |
-|[Tom Nook - 1D](#tom-nook-1d-internet-traffic) | Forensics | 279 | 25 |
-|[Tom Nook - 1E](#tom-nook-1e-internet-traffic) | Forensics | 194 | 30 |
-|[Tom Nook - 1F](#tom-nook-1f-internet-traffic) | Forensics | 192 | 20 |
+|[Tom Nook - 1A](#tom-nook-1a) | Forensics | 259 | 30 |
+|[Tom Nook - 1B](#tom-nook-1b) | Forensics | 318 | 10 |
+|[Tom Nook - 1C](#tom-nook-1c) | Forensics | 318 | 10 |
+|[Tom Nook - 1D](#tom-nook-1d) | Forensics | 279 | 25 |
+|[Tom Nook - 1E](#tom-nook-1e) | Forensics | 194 | 30 |
+|[Tom Nook - 1F](#tom-nook-1f) | Forensics | 192 | 20 |
 
 
 
