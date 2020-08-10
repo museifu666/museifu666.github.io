@@ -21,29 +21,29 @@ I want to start this post out by saying a big thank you to all the organizers an
 
 | Challenge Name | Category | Solves | Points |
 |:--------------:|:--------:|:------:|:------:|
-|[Bastion](#Bastion) | Tunneler | 360 | 25 |
-|[Browsing Websites](#Browsing Websites) | Tunneler | 276 | 50 |
-|[SSH in tunnels](#SSH in tunnels) | Tunneler | 267 | 50 |
-|[Another Pivot](#Another pivot) | Tunneler | 169 | 75 |
-|[What failed](#What failed) | Logs | 437 | 25 |
-|[Who failed](#Who failed) | Logs | 388 | 25 |
-|[We failed](#We failed) | Logs | 401 | 25 |
-|[Whom failed](#Whom failed) | Logs | 401 | 25 |
-|[All about that base](#All about that base) | Crypto, Ciphers, and Encodings | 504 | 10 |
-|[All about that base remix](#All about that base remix) | Crypto, Ciphers, and Encodings | 360 | 10 |
+|[Bastion](#bastion) | Tunneler | 360 | 25 |
+|[Browsing Websites](#browsing-websites) | Tunneler | 276 | 50 |
+|[SSH in tunnels](#ssh-in-tunnels) | Tunneler | 267 | 50 |
+|[Another Pivot](#another-pivot) | Tunneler | 169 | 75 |
+|[What failed](#what-failed) | Logs | 437 | 25 |
+|[Who failed](#who-failed) | Logs | 388 | 25 |
+|[We failed](#we-failed) | Logs | 401 | 25 |
+|[Whom failed](#whom-failed) | Logs | 401 | 25 |
+|[All about that base](#all-about-that-base) | Crypto, Ciphers, and Encodings | 504 | 10 |
+|[All about that base remix](#all-about-that-base-remix) | Crypto, Ciphers, and Encodings | 360 | 10 |
 |[n Eggs](#n-eggs) | Crypto, Ciphers, and Encodings | 423 | 10 |
 |[et tu brute](#et-tu-brute) | Crypto, Ciphers, and Encodings | 376 | 10 |
-|[AFSC 29331](#afsc 29331) | Crypto, Ciphers, and Encodings | 313 | 10 |
-|[Don't touch the third rail](#Don't-touch-the-third-rail) | Crypto, Ciphers, and Encodings | 188 | 10 |
+|[AFSC 29331](#afsc-29331) | Crypto, Ciphers, and Encodings | 313 | 10 |
+|[Don't touch the third rail](#dont-touch-the-third-rail) | Crypto, Ciphers, and Encodings | 188 | 10 |
 |[Why are they even in that order in the fist place?](#why-are-they-even-in-that-order-in-the-fist-place) | Crypto, Ciphers, and Encodings | 222 | 10 |
-|[Pop a shell on that](#Pop-a-shell-on-that) | Workout at Home Gym | 145 | 200 |
-|[Let's enumerate the host a bit 1](#let's-enumerate-the-host-a-bit-1) | Workout at Home Gym | 131 | 25 |
-|[Let's enumerate the host a bit 2](#let's-enumerate-the-host-a-bit-2) | Workout at Home Gym | 125 | 50 |
-|[Let's have some SQL fun 1](#let's-have-some-sql-fun-1) | Workout at Home Gym | 112 | 300 |
-|[Let's have some SQL fun 2](#let's-have-some-sql-fun-2) | Workout at Home Gym | 100 | 75 |
-|[Let's have some SQL fun 3](#let's-have-some-sql-fun-3) | Workout at Home Gym | 95 | 75 |
-|[Let's have some SQL fun 4](#let's-have-some-sql-fun-4) | Workout at Home Gym | 108 | 75 |
-|[Lookin' for dem Tiger Tunes](#lookin'-for-dem-tiger-tunes) | Tiger Tunes | 127 | 50 |
+|[Pop a shell on that](#pop-a-shell-on-that) | Workout at Home Gym | 145 | 200 |
+|[Let's enumerate the host a bit 1](#lets-enumerate-the-host-a-bit-1) | Workout at Home Gym | 131 | 25 |
+|[Let's enumerate the host a bit 2](#lets-enumerate-the-host-a-bit-2) | Workout at Home Gym | 125 | 50 |
+|[Let's have some SQL fun 1](#lets-have-some-sql-fun-1) | Workout at Home Gym | 112 | 300 |
+|[Let's have some SQL fun 2](#lets-have-some-sql-fun-2) | Workout at Home Gym | 100 | 75 |
+|[Let's have some SQL fun 3](#lets-have-some-sql-fun-3) | Workout at Home Gym | 95 | 75 |
+|[Let's have some SQL fun 4](#lets-have-some-sql-fun-4) | Workout at Home Gym | 108 | 75 |
+|[Lookin' for dem Tiger Tunes](#lookin-for-dem-tiger-tunes) | Tiger Tunes | 127 | 50 |
 |[Tigers Never Let You Down](#tigers-never-let-you-down) | Tiger Tunes | 52 | 150 |
 |[Look Closer](#look-closer) | Tiger Tunes | 66 | 150 |
 |[Can you hear me now?](#can-you-hear-me-now) | Forensics | 127 | 10 |
@@ -61,7 +61,7 @@ I want to start this post out by saying a big thank you to all the organizers an
 
 ----------------
 
-## Bastion
+## Bastion {#bastion}
 #### Category : Tunneler | Solves: 360 | Points: 25
 
 ----------------
@@ -91,7 +91,7 @@ Simple enough.
 
 ----------------
 
-## Browsing Websites
+## Browsing Websites {#browsing-websites}
 
 #### Category: Tunneler | Solves: 276 | Points: 50
 
@@ -129,7 +129,7 @@ Flag: `ts{TheFirstTunnelIsTheEasiest}`
 
 ----------------
 
-## SSH in tunnels
+## SSH in tunnels {#ssh-in-tunnels}
 
 #### Category: Tunneler | Solves: 267 | Points: 50
 
@@ -155,7 +155,7 @@ Flag: `ts{IThoughtWeLostYouOnTheWay}`
 
 ----------------
 
-## Another Pivot
+## Another Pivot {#another-pivot}
 
 #### Category: Tunneler | Solves: 170 | Points: 75
 
@@ -202,7 +202,7 @@ Flag: `ts{TunnelsInTunnelsInTunnels}`
 
 ----------------
 
-## What failed
+## What failed {#what-failed}
 
 #### Category: Logs | Solves: 437 | Points: 25 
 
@@ -225,7 +225,7 @@ Flag: `ssh`
 
 ----------------
 
-## Who failed
+## Who failed {#who-failed}
 
 #### Category: Logs | Solves: 389 | Points: 25
 
@@ -255,7 +255,7 @@ Flag: `8`
 
 ----------------
 
-## We failed
+## We failed {#we-failed}
 
 #### Category: Logs | Solves: 401 | Points: 25
 
@@ -280,7 +280,7 @@ Flag: `48`
 
 ----------------
 
-## Whom failed
+## Whom failed {#whom-failed}
 
 #### Category: Logs | Solves: 402 | Points: 25
 
@@ -305,7 +305,7 @@ Flag: `116.31.116.47`
 
 ----------------
 
-## All about that base
+## All about that base {#all-about-that-base}
 
 #### Category: Crypto, Ciphers, and Encodings | Solves: 504 | Points: 10
 
@@ -328,7 +328,7 @@ Flag: `ts{IsThisEncryption}`
 
 ----------------
 
-## All about that base remix
+## All about that base remix {#all-about-that-base-remix}
 
 #### Category: Crypto, Ciphers, and Encodings | Solves: 360 | Points: 10
 
@@ -355,7 +355,7 @@ Flag: `ts{ThisIstotallyEncryption!}`
 
 ----------------
 
-## n Eggs
+## n Eggs {#n-eggs}
 
 #### Category: Crypto, Ciphers, and Encodings | Solves: 423 | Points: 10
 
@@ -376,7 +376,7 @@ Flag: `TSBACONISMYNAME`
 
 ----------------
 
-## et tu brute
+## et tu brute {#et-tu-brute}
 
 #### Category: Crypto, Ciphers, and Encodings | Solved: 313 | Points: 10
 
@@ -399,7 +399,7 @@ Flag: `TSANOLDIEBUTAGOODIE`
 
 ----------------
 
-## AFSC 29331
+## AFSC 29331 {#asfc-29331}
 
 #### Category: Crypto, Ciphers, and Encodings | Solves: 313 | Points: 10
 
@@ -422,7 +422,7 @@ Flag: `DUTY BOPPERS`
 
 ----------------
 
-## Don't touch the third rail
+## Don't touch the third rail {#dont-touch-the-third-rail}
 
 #### Category: Crypto, Ciphers, and Encodings | Solves: 188 | Points: 10
 
@@ -445,7 +445,7 @@ Flag: `ts{ZigyzagyCipherFTW}`
 
 ----------------
 
-## Why are they even in that order in the fist place?
+## Why are they even in that order in the fist place? {#why-are-they-even-in-that-order-in-the-fist-place}
 
 #### Category: Crypto, Ciphers, and Encodings | Solves: 222 | Points: 10
 
@@ -470,7 +470,7 @@ Flag: `TSLONGESTCOMBOEVERRECORDED`
 
 ----------------
 
-## Pop a shell on that
+## Pop a shell on that {#pop-a-shell-on-that}
 
 #### Category: Workout at Home Gym | Solves: 145 | Points: 200
 
@@ -515,7 +515,7 @@ Flag: `ts{ThatWasAnEasyShelltoPop}`
 
 ----------------
 
-## Let's Enumerate this host a bit 1
+## Let's Enumerate this host a bit 1 {#lets-enumerate-this-host-a-bit-1}
 
 #### Category: Workout at Home Gym | Solves: 131 | Points: 25
 
@@ -552,7 +552,7 @@ Flag: `10.213.12.10`
 
 ----------------
 
-## Let's Enumerate this host a bit 2
+## Let's Enumerate this host a bit 2 {#lets-enumerate-this-host-a-bit-2}
 
 #### Category: Workout at Home Gym | Solves: 125 | Points: 50
 
@@ -577,7 +577,7 @@ Flag: `toor`
 
 ----------------
 
-## Let's have some SQL fun 1
+## Let's have some SQL fun 1 {#lets-have-some-sql-fun-1}
 
 #### Category: Workout at Home Gym | Solves: 112 | Points: 300
 
@@ -622,7 +622,7 @@ Flag: `James`
 
 ----------------
 
-## Let's have some SQL fun 2
+## Let's have some SQL fun 2 {#lets-have-some-sql-fun-2}
 
 #### Category: Workout at Home Gym | Solves: 100 | Points: 75
 
@@ -651,7 +651,7 @@ Flag: `5016`
 
 ----------------
 
-## Let's have some SQL fun 3
+## Let's have some SQL fun 3 {#lets-have-some-sql-fun-3}
 
 #### Category: Workout at Home Gym | Solves: 95 | Points: 75
 
@@ -696,7 +696,7 @@ Flag: `Austin`
 
 ----------------
 
-## Let's have some SQL fun 4
+## Let's have some SQL fun 4 {#lets-have-some-sql-fun-4}
 
 #### Category: Workout at Home Gym | Solves: 108 | Points: 75
 
@@ -753,7 +753,7 @@ Flag: `2014`
 
 ----------------
 
-## Lookin' for dem Tiger Tunes
+## Lookin' for dem Tiger Tunes {#lookin-for-dem-tiger-tunes}
 
 #### Category: Tiger Tunes | Solves: 127 | Points: 50
 
@@ -792,7 +792,7 @@ Flag: `TS{SheDidItDotDotDotty}`
 
 ----------------
 
-## Tigers Never Let You Down
+## Tigers Never Let You Down {#tigers-never-let-you-down}
 
 #### Category: Tiger Tunes | Solves: 52 | Points: 150
 
@@ -853,7 +853,7 @@ Flag: `TS{NeverGonnaLetYouFindMyExHusbandsBody}`
 
 ----------------
 
-## Look Closer
+## Look Closer {#look-closer}
 
 #### Category: Tiger Tunes | Solves: 66 | Points: 150
 
@@ -880,7 +880,7 @@ Flag: `TS{SupaHotFireeeeee}`
 
 ----------------
 
-## Can you hear me now?
+## Can you hear me now? {#can-you-hear-me-now}
 
 #### Category: Forensics | Solves: 127 | Points: 10
 
@@ -909,7 +909,7 @@ Flag: `flag{s0nicw@v!}`
 
 ----------------
 
-## Just a nice picture
+## Just a nice picture {#just-a-nice-picture}
 
 #### Category: Forensics | Solves: 127 | Points: 25
 
@@ -964,7 +964,7 @@ Flag: `flag{f93kfaskdif92}`
 
 ----------------
 
-## Strings
+## Strings {#strings}
 
 #### Category: Pwn | Solves: 155 | Points: 75
 
@@ -995,7 +995,7 @@ Flag: `ts{DidYouUseStringsorMaths}`
 
 ----------------
 
-## Tom Nook - 1A
+## Tom Nook - 1A {#tom-nook-1a}
 
 #### Category: Forensics | Solves: 259 | Points: 30
 
@@ -1018,7 +1018,7 @@ Flag: `TS{TomNookUsesTheInternet}`
 
 ----------------
 
-## Tom Nook - 1B
+## Tom Nook - 1B {#tom-nook-1b}
 
 #### Category: Forensics | Solves: 321 | Points: 10
 
@@ -1037,7 +1037,7 @@ Flag: `192.168.1.47`
 
 ----------------
 
-## Tom Nook - 1C
+## Tom Nook - 1C {#tom-nook-1c}
 
 #### Category: Forensics | Solves: 321 | Points: 10
 
@@ -1056,7 +1056,7 @@ Flag: `161.35.110.243`
 
 ----------------
 
-## Tom Nook - 1D
+## Tom Nook - 1D {#tom-nook-1d}
 
 #### Category: Forensics | Solves: 282 | Points: 25
 
@@ -1075,7 +1075,7 @@ Flag: `SecretACBankStatement.zip`
 
 ----------------
 
-## Tom Nook - 1E
+## Tom Nook - 1E {#tom-nook-1e}
 
 #### Category: Forensics | Solves: 282 | Points: 25
 
@@ -1102,7 +1102,7 @@ Flag: `monkey123`
 
 ----------------
 
-## Tom Nook - 1F
+## Tom Nook - 1F {#tom-nook-1f}
 
 #### Category: Forensics | Solves: 194 | Points: 20
 
