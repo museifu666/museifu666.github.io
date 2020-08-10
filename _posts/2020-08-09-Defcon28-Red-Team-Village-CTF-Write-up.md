@@ -101,9 +101,9 @@ We are given "Browse to http://10.174.12.14".
 
 This is an internal IP, we will need to setup a proxy in order to browse internally to this host.
 
-We will accomplish this with proxychains and ssh with the following commands,
+We will accomplish this with proxychains and SSH with the following commands,
 
-First, we will setup a dynamic port forward over port 1080 on our localhost to the bastion server via ssh on port 2222.
+First, we will setup a dynamic port forward over port 1080 on our localhost to the bastion server via SSH on port 2222.
 
 `ssh -D 1080 tunneler@164.90.147.46 -p 2222`
 
@@ -167,7 +167,7 @@ We are now tasked with connecting to an additional pivot.
 
 There are two ways to go about this, I will cover both.
 
-If we simply needed to connect to another host from our initial pivot and not establish another anchor point (second pivot) we could do this with a built in ssh command  (-J) that allows jumping from one SSH server to the next. (Note: some servers do not allow this, but in this case we can):
+If we simply needed to connect to another host from our initial pivot and not establish another anchor point (second pivot) we could do this with the built-in SSH (-J) command that allows jumping from one SSH server to the next. (Note: some servers do not allow this, but in this case we can):
 
 `proxychains ssh -J whistler@10.218.176.199 crease@10.112.3.12`
 
@@ -212,7 +212,7 @@ Flag: `ts{TunnelsInTunnelsInTunnels}`
 
 I simply viewed the log file from Google Drive.
 
-A quick review of the log file shows fail2ban has been configured to ban users over ssh.
+A quick review of the log file shows fail2ban has been configured to ban users over SSH.
 
 ![readlogs](https://i.imgur.com/yQmVZ0k.png)
 
