@@ -21,14 +21,14 @@ I want to start this post out by saying a big thank you to all the organizers an
 
 | Challenge Name | Category | Solves | Points |
 |:--------------:|:--------:|:------:|:------:|
-|[1 Bastion](#1-bastion) | Tunneler | 360 | 25 |
-|[2 Browsing Websites](#2-browsing-websites) | Tunneler | 276 | 50 |
-|[3 SSH in tunnels](#3-ssh-in-tunnels) | Tunneler | 267 | 50 |
-|[7 Another Pivot](#7-another-pivot) | Tunneler | 169 | 75 |
-|[1 What failed](#1-what-failed) | Logs | 437 | 25 |
-|[2 Who failed](#2-who-failed) | Logs | 388 | 25 |
-|[3 We failed](#3-we-failed) | Logs | 401 | 25 |
-|[4 Whom failed](#4-whom-failed) | Logs | 401 | 25 |
+|[Bastion](#1-bastion) | Tunneler | 360 | 25 |
+|[Browsing Websites](#2-browsing-websites) | Tunneler | 276 | 50 |
+|[SSH in tunnels](#3-ssh-in-tunnels) | Tunneler | 267 | 50 |
+|[Another Pivot](#7-another-pivot) | Tunneler | 169 | 75 |
+|[What failed](#1-what-failed) | Logs | 437 | 25 |
+|[Who failed](#2-who-failed) | Logs | 388 | 25 |
+|[We failed](#3-we-failed) | Logs | 401 | 25 |
+|[Whom failed](#4-whom-failed) | Logs | 401 | 25 |
 |[All about that base](#all-about-that-base) | Crypto, Ciphers, and Encodings | 504 | 10 |
 |[All about that base remix](#all-about-that-base-remix) | Crypto, Ciphers, and Encodings | 360 | 10 |
 |[n Eggs](#n-eggs) | Crypto, Ciphers, and Encodings | 423 | 10 |
@@ -36,32 +36,32 @@ I want to start this post out by saying a big thank you to all the organizers an
 |[AFSC 29331](#afsc-29331) | Crypto, Ciphers, and Encodings | 313 | 10 |
 |[Don't touch the third rail](#dont-touch-the-third-rail) | Crypto, Ciphers, and Encodings | 188 | 10 |
 |[Why are they even in that order in the fist place?](#why-are-they-even-in-that-order-in-the-fist-place) | Crypto, Ciphers, and Encodings | 222 | 10 |
-|[1 - Pop a shell on that](#1-pop-a-shell-on-that) | Workout at Home Gym | 145 | 200 |
-|[2 - Let's enumerate the host a bit 1](#lets-enumerate-the-host-a-bit-1) | Workout at Home Gym | 131 | 25 |
-|[3 - Let's enumerate the host a bit 2](#lets-enumerate-the-host-a-bit-2) | Workout at Home Gym | 125 | 50 |
-|[4 - Let's have some SQL fun 1](#lets-have-some-sql-fun-1) | Workout at Home Gym | 112 | 300 |
-|[5 - Let's have some SQL fun 2](#lets-have-some-sql-fun-2) | Workout at Home Gym | 100 | 75 |
-|[6 - Let's have some SQL fun 3](#lets-have-some-sql-fun-3) | Workout at Home Gym | 95 | 75 |
-|[7 - Let's have some SQL fun 4](#lets-have-some-sql-fun-4) | Workout at Home Gym | 108 | 75 |
-|[1 Lookin' for dem Tiger Tunes](#lookin-for-dem-tiger-tunes) | Tiger Tunes | 127 | 50 |
-|[2 Tigers Never Let You Down](#tigers-never-let-you-down) | Tiger Tunes | 52 | 150 |
-|[4 Look Closer](#look-closer) | Tiger Tunes | 66 | 150 |
+|[Pop a shell on that](#1-pop-a-shell-on-that) | Workout at Home Gym | 145 | 200 |
+|[Let's enumerate the host a bit 1](#lets-enumerate-the-host-a-bit-1) | Workout at Home Gym | 131 | 25 |
+|[Let's enumerate the host a bit 2](#lets-enumerate-the-host-a-bit-2) | Workout at Home Gym | 125 | 50 |
+|[Let's have some SQL fun 1](#lets-have-some-sql-fun-1) | Workout at Home Gym | 112 | 300 |
+|[Let's have some SQL fun 2](#lets-have-some-sql-fun-2) | Workout at Home Gym | 100 | 75 |
+|[Let's have some SQL fun 3](#lets-have-some-sql-fun-3) | Workout at Home Gym | 95 | 75 |
+|[Let's have some SQL fun 4](#lets-have-some-sql-fun-4) | Workout at Home Gym | 108 | 75 |
+|[Lookin' for dem Tiger Tunes](#lookin-for-dem-tiger-tunes) | Tiger Tunes | 127 | 50 |
+|[Tigers Never Let You Down](#tigers-never-let-you-down) | Tiger Tunes | 52 | 150 |
+|[Look Closer](#look-closer) | Tiger Tunes | 66 | 150 |
 |[Can you hear me now?](#can-you-hear-me-now) | Forensics | 127 | 10 |
 |[Just a nice picture](#just-a-nice-picture) | Forensics | 127 | 25 |
 |[Strings](#strings) | Pwn | 155 | 75 |
-|[Tom Nook - 1A - Internet Traffic](#tom-nook-1a-internet-traffic) | Forensics | 259 | 30 |
-|[Tom Nook - 1B - Internet Traffic](#tom-nook-1b-internet-traffic) | Forensics | 318 | 10 |
-|[Tom Nook - 1C - Internet Traffic](#tom-nook-1c-internet-traffic) | Forensics | 318 | 10 |
-|[Tom Nook - 1D - Internet Traffic](#tom-nook-1d-internet-traffic) | Forensics | 279 | 25 |
-|[Tom Nook - 1E - Internet Traffic](#tom-nook-1e-internet-traffic) | Forensics | 194 | 30 |
-|[Tom Nook - 1F - Internet Traffic](#tom-nook-1f-internet-traffic) | Forensics | 192 | 20 |
+|[Tom Nook - 1A](#tom-nook-1a-internet-traffic) | Forensics | 259 | 30 |
+|[Tom Nook - 1B](#tom-nook-1b-internet-traffic) | Forensics | 318 | 10 |
+|[Tom Nook - 1C](#tom-nook-1c-internet-traffic) | Forensics | 318 | 10 |
+|[Tom Nook - 1D](#tom-nook-1d-internet-traffic) | Forensics | 279 | 25 |
+|[Tom Nook - 1E](#tom-nook-1e-internet-traffic) | Forensics | 194 | 30 |
+|[Tom Nook - 1F](#tom-nook-1f-internet-traffic) | Forensics | 192 | 20 |
 
 
 
 
 ----------------
 
-## 1 Bastion
+## Bastion
 #### Category : Tunneler | Solves: 360 | Points: 25
 
 ----------------
@@ -91,7 +91,7 @@ Simple enough.
 
 ----------------
 
-## 2 Browsing Websites
+## Browsing Websites
 
 #### Category: Tunneler | Solves: 276 | Points: 50
 
@@ -129,7 +129,7 @@ Flag: `ts{TheFirstTunnelIsTheEasiest}`
 
 ----------------
 
-## 3 SSH in tunnels
+## SSH in tunnels
 
 #### Category: Tunneler | Solves: 267 | Points: 50
 
@@ -155,7 +155,7 @@ Flag: `ts{IThoughtWeLostYouOnTheWay}`
 
 ----------------
 
-## 7 Another Pivot
+## Another Pivot
 
 #### Category: Tunneler | Solves: 170 | Points: 75
 
@@ -202,7 +202,7 @@ Flag: `ts{TunnelsInTunnelsInTunnels}`
 
 ----------------
 
-## 1 What failed
+## What failed
 
 #### Category: Logs | Solves: 437 | Points: 25 
 
@@ -225,7 +225,7 @@ Flag: `ssh`
 
 ----------------
 
-## 2 Who failed
+## Who failed
 
 #### Category: Logs | Solves: 389 | Points: 25
 
@@ -255,7 +255,7 @@ Flag: `8`
 
 ----------------
 
-## 3 We failed
+## We failed
 
 #### Category: Logs | Solves: 401 | Points: 25
 
@@ -280,7 +280,7 @@ Flag: `48`
 
 ----------------
 
-## 4 Whom failed
+## Whom failed
 
 #### Category: Logs | Solves: 402 | Points: 25
 
@@ -470,7 +470,7 @@ Flag: `TSLONGESTCOMBOEVERRECORDED`
 
 ----------------
 
-## 1 - Pop a shell on that
+## Pop a shell on that
 
 #### Category: Workout at Home Gym | Solves: 145 | Points: 200
 
@@ -515,7 +515,7 @@ Flag: `ts{ThatWasAnEasyShelltoPop}`
 
 ----------------
 
-##  2 - Let's Enumerate this host a bit 1
+## Let's Enumerate this host a bit 1
 
 #### Category: Workout at Home Gym | Solves: 131 | Points: 25
 
@@ -552,7 +552,7 @@ Flag: `10.213.12.10`
 
 ----------------
 
-## 3 - Let's Enumerate this host a bit 2
+## Let's Enumerate this host a bit 2
 
 #### Category: Workout at Home Gym | Solves: 125 | Points: 50
 
@@ -622,7 +622,7 @@ Flag: `James`
 
 ----------------
 
-## 5 - Let's have some SQL fun 2
+## Let's have some SQL fun 2
 
 #### Category: Workout at Home Gym | Solves: 100 | Points: 75
 
@@ -651,7 +651,7 @@ Flag: `5016`
 
 ----------------
 
-## 6 - Let's have some SQL fun 3
+## Let's have some SQL fun 3
 
 #### Category: Workout at Home Gym | Solves: 95 | Points: 75
 
@@ -696,7 +696,7 @@ Flag: `Austin`
 
 ----------------
 
-## 7 - Let's have some SQL fun 4
+## Let's have some SQL fun 4
 
 #### Category: Workout at Home Gym | Solves: 108 | Points: 75
 
@@ -753,7 +753,7 @@ Flag: `2014`
 
 ----------------
 
-## 1 Lookin' for dem Tiger Tunes
+## Lookin' for dem Tiger Tunes
 
 #### Category: Tiger Tunes | Solves: 127 | Points: 50
 
@@ -995,7 +995,7 @@ Flag: `ts{DidYouUseStringsorMaths}`
 
 ----------------
 
-## Tom Nook - 1A - Internet Traffic
+## Tom Nook - 1A
 
 #### Category: Forensics | Solves: 259 | Points: 30
 
@@ -1018,7 +1018,7 @@ Flag: `TS{TomNookUsesTheInternet}`
 
 ----------------
 
-## Tom Nook - 1B - Internet Traffic
+## Tom Nook - 1B
 
 #### Category: Forensics | Solves: 321 | Points: 10
 
@@ -1037,7 +1037,7 @@ Flag: `192.168.1.47`
 
 ----------------
 
-## Tom Nook - 1C - Internet Traffic
+## Tom Nook - 1C
 
 #### Category: Forensics | Solves: 321 | Points: 10
 
@@ -1056,7 +1056,7 @@ Flag: `161.35.110.243`
 
 ----------------
 
-## Tom Nook - 1D - Internet Traffic
+## Tom Nook - 1D
 
 #### Category: Forensics | Solves: 282 | Points: 25
 
@@ -1075,7 +1075,7 @@ Flag: `SecretACBankStatement.zip`
 
 ----------------
 
-## Tom Nook - 1E - Internet Traffic
+## Tom Nook - 1E
 
 #### Category: Forensics | Solves: 282 | Points: 25
 
@@ -1102,7 +1102,7 @@ Flag: `monkey123`
 
 ----------------
 
-## Tom Nook - 1F - Internet Traffic
+## Tom Nook - 1F
 
 #### Category: Forensics | Solves: 194 | Points: 20
 
