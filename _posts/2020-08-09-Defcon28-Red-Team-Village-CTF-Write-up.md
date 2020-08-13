@@ -601,7 +601,7 @@ Next let's take a look at the tables.
 
 Members is likely the table we care about for this challenge. Let's check the columns for the members table.
 
-`select columns from members;`
+`show columns from members;`
 
 ![columns](https://i.imgur.com/ywGaGVu.png)
 
